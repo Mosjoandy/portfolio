@@ -24,7 +24,7 @@ const About = () => (
         <p>After graduating from UC Berkeley's Coding Bootcamp, I have been working at refining my skills in tech, while 
             searching for entry level positions. The bootcamp laid a foundation of self-learning in high-pressure environments,
             so cramming new languages and concepts felt the norm. Every day and week, I spend polishing past projects, or learning. 
-            </p>
+        </p>
 
 
 
