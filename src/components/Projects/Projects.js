@@ -15,6 +15,6 @@ const Projects = () => (
             <a href="https://mysterious-cliffs-66031.herokuapp.com/"><img width="100px" src="https://railsware.com/blog/wp-content/uploads/2017/12/Heroku-Queuing-Time.png" alt="heroku deployment" /></a>
         </div>
     </div>
-        );
+);
         
 export default Projects;
