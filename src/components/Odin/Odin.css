@@ -1,0 +1,17 @@
+.odinbg {
+    background-image: url("../images/odinbg.png");
+    height: 50rem;
+    width: 100%;
+    filter: blur(2px);
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+}
+
+.odinContent {
+    height: 50rem;
+    width: 100%;
+}

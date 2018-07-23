@@ -2,9 +2,9 @@ import React from "react";
 import "./Home.css";
 
 const Home = () => (
-        <div className="col-md-12  homebg">
+        <div className="col-md-12 homebg">
             <p>My name is Nicholas Chan. I am originally from Los Angeles, California. I enjoy motorcycles, rockhounding,
-                    wild edible foraging, camping, traveling, computer games, movies, and mostly anything sci-fi or fantasy-related.
+                wild edible foraging, camping, traveling, computer games, movies, and mostly anything sci-fi or fantasy-related.
             </p>
 
             <p>My previous career was in Recreation Therapy, where I used recreation as my medium of therapy. I spent 6
@@ -13,9 +13,9 @@ const Home = () => (
                 life. However, I slowly began to discover that I wanted to pursue a different career.
             </p>
 
-            <p>I searched online and found all sorts of coding bootcamps. UC Berkeley offered an immersive 3-month bootcamp.
+            <p>I searched online and discovered many different coding bootcamps. UC Berkeley offered an immersive 3-month bootcamp.
                 I spent my entire life on the computer. Whether it was for leisure or for work, I was constantly hammering
-                away on a keyboard. I realized that this was something worth pursuing, combining my work and leisure
+                away on a keyboard. I realized that this was something worth pursuing, combining work and leisure
                 into one. I dropped everything and moved away from my home in Los Angeles to the Bay Area. Being able
                 to live nomadically helped out tremendously, making the transition relatively easy.
             </p>

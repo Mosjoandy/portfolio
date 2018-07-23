@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+// import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import './App.css';
 
 import Nav from './components/Nav';
@@ -12,17 +12,21 @@ class App extends Component {
   render() {
 
     return (
-      <div className="container rounded">
-        <Router>
-          <div>
+      <div>
+        {/* <Router> */}
+          {/* <div> */}
             <Nav />
-            <Switch>
+            <Projects />
+            <Home />
+            
+            <Contact />
+            {/* <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/Contact" component={Contact} />
               <Route exact path="/Projects" component={Projects} />
-            </Switch>
-          </div>
-        </Router>
+            </Switch> */}
+          {/* </div> */}
+        {/* </Router> */}
       </div>
     );
   };

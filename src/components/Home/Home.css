@@ -4,5 +4,7 @@
 }
 
 .homebg {
-    background-color: white;
+    background-color: teal;
+    height: 50rem;
+    width: 100%;    
 }

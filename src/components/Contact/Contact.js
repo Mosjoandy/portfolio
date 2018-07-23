@@ -3,7 +3,7 @@ import "./Contact.css";
 
 const Contact = () => (
 
-    <div>Hello Contact
+    <div className="contactbg">Hello Contact
     </div>
 );
 
