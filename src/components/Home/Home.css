@@ -1,10 +1,39 @@
-.nameNav {
-    color: white;
-    font-size: 4rem;
+.homebg {
+    background-color: salmon;
+    height: 50rem;
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
 }
 
-.homebg {
-    background-color: teal;
+.skillSetImg {
+    width: 2.5rem;
+    margin: auto;
+}
+
+.logoSet {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.homeContent {
     height: 50rem;
-    width: 100%;    
+    width: 100%;
+}
+
+.homeCard{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    left: 0;
+    top: 9rem;
+
+}
+
+.homeTitle {
+    margin-bottom: 1rem;
 }

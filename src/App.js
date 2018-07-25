@@ -16,9 +16,9 @@ class App extends Component {
         {/* <Router> */}
           {/* <div> */}
             <Nav />
-            <Projects />
             <Home />
-            
+            <Projects />
+           
             <Contact />
             {/* <Switch>
               <Route exact path="/" component={Home} />

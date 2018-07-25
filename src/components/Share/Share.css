@@ -1,0 +1,18 @@
+.sharebg {
+    /* background-image: url("../images/odinbg.png"); */
+    background-color: orange;
+    height: 50rem;
+    width: 100%;
+    /* filter: blur(2px); */
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+}
+
+.shareContent {
+    height: 50rem;
+    width: 100%;
+}
