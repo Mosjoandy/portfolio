@@ -1,39 +1,13 @@
-.homebg {
-    background-color: salmon;
-    height: 50rem;
-    width: 100%;
-    position: relative;
-    left: 0;
-    right: 0;
-    z-index: -1;
-
-}
-
 .skillSetImg {
-    width: 2.5rem;
-    margin: auto;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
 }
 
-.logoSet {
-    width: 100%;
-    margin: auto;
-    justify-content: center;
+#skillSet {
+    margin: 0 auto;
 }
 
-.homeContent {
-    height: 50rem;
-    width: 100%;
-}
-
-.homeCard{
-    width: 90%;
-    margin: auto;
-    position: relative;
-    left: 0;
-    top: 9rem;
-
-}
-
-.homeTitle {
-    margin-bottom: 1rem;
+#bioCard {
+    margin: 5vh 5vw;
 }
