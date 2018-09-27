@@ -1,6 +1,9 @@
 import React from "react";
 import "./Home.css";
 import { Container, Row, Col, Section } from "../Grid";
+import Slide from 'react-reveal/Slide';
+import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
 
 const Home = () => (
 
@@ -8,15 +11,24 @@ const Home = () => (
         <Container fluid>
             <Row>
                 <Col size="md-6">
-                    <div id="bioCard" className="card">
-                        <div className="card-body">
-                            <h2 className="homeTitle">Hi there, I'm Nick.</h2>
-                            <p>I am a recent graduate from the UC Berkeley Coding Bootcamp.
-                                My skillset is in full-stack development, but I have a great ineterest in UX/UI and general
-                                front end web development. I am always trying to learn something new and enjoy working
-                                with others.
-                                </p>
-                            <p>
+                    {/* <Fade left> */}
+                        <div id="bioCard" className="card">
+                            <div className="card-body">
+                                <h2>
+                                    <Fade left cascade delay={700} duration={1500}>
+                                        Hi there, I'm Nick.
+                                    </Fade>
+                                </h2>
+                                <Fade left cascade delay={700} duration={1500}>
+                                    <p>
+                                   
+                                        I am a recent graduate from the UC Berkeley Coding Bootcamp.
+                                            My skillset is in full-stack development, but I have a great ineterest in UX/UI and general
+                                            front end web development. I am always trying to learn something new and enjoy working
+                                            with others.
+                                   
+                                    </p>
+                                </Fade>
                                 <table className="table text-center">
                                     <thead>
                                         <tr>
@@ -24,37 +36,38 @@ const Home = () => (
                                             <th scope="col">Back-End Technology</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><img className="skillSetImg" src={require("../images/html5.png")} alt="html5logo" />HTML5</td>
-                                            <td><img className="skillSetImg" src={require("../images/mysql.png")} alt="mysqllogo" />MySQL</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img className="skillSetImg" src={require("../images/css3.png")} alt="css3logo" />CSS3</td>
-                                            <td><img className="skillSetImg" src={require("../images/mongodb.png")} alt="mongodblogo" />MongoDB</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img className="skillSetImg" src={require("../images/es6.png")} alt="es6logo" />ES6</td>
-                                            <td><img className="skillSetImg" src={require("../images/firebase.png")} alt="firebaselogo" />Google Firebase</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img className="skillSetImg" src={require("../images/reactjs.svg")} alt="reactlogo" />React.js</td>
-                                            <td><img className="skillSetImg" src={require("../images/node.png")} alt="nodelogo" />Node.js</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img className="skillSetImg" src={require("../images/jquery.png")} alt="jquerylogo" />jQuery</td>
-                                            <td><img className="skillSetImg" src={require("../images/ajax.png")} alt="ajaxlogo" />AJAX</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img className="skillSetImg" src={require("../images/bootstrap.png")} alt="bootstraplogo" />Bootstrap</td>
-                                            <td>Axios</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img className="skillSetImg" src={require("../images/handlebars.png")} alt="handlebarslogo" />Handlebars.js</td>
-                                            <td>Express</td>
-                                        </tr>
-                                    </tbody>
-
+                                    <Flip top cascade delay={600} duration={2000}>
+                                        <tbody>
+                                            <tr>
+                                                <td><img className="skillSetImg" src={require("../images/html5.png")} alt="html5logo" />HTML5</td>
+                                                <td><img className="skillSetImg" src={require("../images/mysql.png")} alt="mysqllogo" />MySQL</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img className="skillSetImg" src={require("../images/css3.png")} alt="css3logo" />CSS3</td>
+                                                <td><img className="skillSetImg" src={require("../images/mongodb.png")} alt="mongodblogo" />MongoDB</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img className="skillSetImg" src={require("../images/es6.png")} alt="es6logo" />ES6</td>
+                                                <td><img className="skillSetImg" src={require("../images/firebase.png")} alt="firebaselogo" />Google Firebase</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img className="skillSetImg" src={require("../images/reactjs.svg")} alt="reactlogo" />React.js</td>
+                                                <td><img className="skillSetImg" src={require("../images/node.png")} alt="nodelogo" />Node.js</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img className="skillSetImg" src={require("../images/jquery.png")} alt="jquerylogo" />jQuery</td>
+                                                <td><img className="skillSetImg" src={require("../images/ajax.png")} alt="ajaxlogo" />AJAX</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img className="skillSetImg" src={require("../images/bootstrap.png")} alt="bootstraplogo" />Bootstrap</td>
+                                                <td>Axios</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img className="skillSetImg" src={require("../images/handlebars.png")} alt="handlebarslogo" />Handlebars.js</td>
+                                                <td>Express</td>
+                                            </tr>
+                                        </tbody>
+                                    </Flip>
                                 </table>
 
                                 <table className="table text-center">
@@ -64,21 +77,19 @@ const Home = () => (
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td><img className="skillSetImg" src={require("../images/heroku.png")} alt="herokulogo" />Heroku</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img className="skillSetImg" src={require("../images/github.png")} alt="githublogo" />Git</td>
-                                        </tr>
+                                        <Flip top cascade delay={600} duration={2000}>
+                                            <tr>
+                                                <td><img className="skillSetImg" src={require("../images/heroku.png")} alt="herokulogo" />Heroku</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img className="skillSetImg" src={require("../images/github.png")} alt="githublogo" />Git</td>
+                                            </tr>
+                                        </Flip>
                                     </tbody>
                                 </table>
-
-                            </p>
-
+                            </div>
                         </div>
-
-                    </div>
-
+                    {/* </Fade> */}
                 </Col>
                 <Col size="md-6">
                     {/* <div className="card">

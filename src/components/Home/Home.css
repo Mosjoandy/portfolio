@@ -10,4 +10,7 @@
 
 #bioCard {
     margin: 5vh 5vw;
+    word-wrap: break-word;
+    border: none;
 }
+
