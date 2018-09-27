@@ -1,39 +1,13 @@
-.odinbg {
-    /* background-image: url("../images/odinbg.png"); */
-    background-color: teal;
-    height: 50rem;
-    width: 100%;
-    /* filter: blur(2px); */
-    opacity: 0.8;
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: -1;
-
+#linksIcon {
+    width: 5rem;
 }
 
-.odinContent {
-    height: 50rem;
-    width: 100%;
+#odinProject {
+    background-image: url(../images/wood.jpg)
 }
 
-.lokiPic {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50%
-}
-
-/* .cardPic {
-    position: absolute;
-    bottom: 10rem;
-    right: 10rem;
-    width: 25%;
-} */
-
-.cardPic2 {
-    position: absolute;
-    bottom: 3rem;
-    right: 1rem;
-    width: 50%;
+#projectCard {
+    margin: 5vh 5vw;
+    word-wrap: break-word;
+    border: none;
 }

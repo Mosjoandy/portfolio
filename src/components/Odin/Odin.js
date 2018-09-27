@@ -1,24 +1,37 @@
 import React from "react";
 import "./Odin.css";
+import { Container, Row, Col, Section } from "../Grid";
+
 
 const Odin = () => (
 
-    <div className="row border odinContent">
-        <div className="odinbg" />
+    <Section id="odinProject">
+        <Container fluid>
+            <Row>
+                <Col size="md-6">
+                    <div id="projectCard" className="card bg-none">
+                        <div className="card-body">
+                            <h1 className="text-center">Odin's Ravens</h1>
+                            <div>
+                                <a href="https://github.com/Mosjoandy/OdinsWorld"><img id="linksIcon" src={require("../images/github.png")} alt="github icon" /></a>
+                                <a href="https://evening-coast-38386.herokuapp.com/"><img id="linksIcon" src={require("../images/coin-1.png")} alt="odin coin" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </Col>
 
-        <div className="col-md-6 border text-right">
-            <h1 className="text-center">Odin's Ravens</h1>
-            <a href="https://github.com/Mosjoandy/OdinsWorld"><img width="100rem" src="https://news.bitcoin.com/wp-content/uploads/2018/06/880593_media_512x512-300x300.png" alt="github icon" /></a>
-            <a href="https://evening-coast-38386.herokuapp.com/"><img width="100rem" src="https://evening-coast-38386.herokuapp.com/static/media/coin-1.319f82ba.png" alt="odin coin" /></a>
-        </div>
-
-        <div className="col-md-6 border">
-           
-            <img className="lokiPic" src={require("../images/loki.png")} alt="loki" />
-            {/* <img className="cardPic" src={require("../images/cards.png")} alt="cards" /> */}
-            <img className="cardPic2" src={require("../images/cards2.png")} alt="cards2" />
-        </div>
-    </div>
+                <Col size="md-6">
+                    <div id="projectCard" className="card">
+                        <div className="card-body">
+                            <img className="lokiPic" src={require("../images/loki.png")} alt="loki" />
+                            {/* <img className="cardPic" src={require("../images/cards.png")} alt="cards" /> */}
+                            <img className="cardPic2" src={require("../images/cards2.png")} alt="cards2" />
+                        </div>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
+    </Section>
 );
 
 export default Odin;
