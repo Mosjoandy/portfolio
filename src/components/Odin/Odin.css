@@ -1,19 +1,15 @@
-#linksIcon {
-    width: 8rem;
-}
-
 #odinProject {
     background-image: url(../images/wood.jpg)
 }
 
 #projectCard {
+    background-color: #00000000;
     margin: 5vh 5vw;
     word-wrap: break-word;
     border: none;
+    color: white;
 }
 
-#linksUpTop {
-    position: absolute;
-    top: 0;
-    right: 0;
+#linksIcon {
+    width: 5rem;
 }
