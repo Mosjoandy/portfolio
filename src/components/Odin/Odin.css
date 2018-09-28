@@ -1,5 +1,5 @@
 #linksIcon {
-    width: 5rem;
+    width: 8rem;
 }
 
 #odinProject {
@@ -10,4 +10,10 @@
     margin: 5vh 5vw;
     word-wrap: break-word;
     border: none;
+}
+
+#linksUpTop {
+    position: absolute;
+    top: 0;
+    right: 0;
 }

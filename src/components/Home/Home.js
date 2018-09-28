@@ -24,15 +24,12 @@ const Home = () => (
                                     Hi there, I'm Nick.
                                 </Fade>
                             </h2>
-
-                            <p>
-                                <Fade down delay={500}>
-                                    I am a recent graduate from the UC Berkeley Coding Bootcamp.
-                                        My skillset is in full-stack development, but I have a great ineterest in UX/UI and general
-                                        front end web development. I am always trying to learn something new and enjoy working
-                                        with others.
+                            <Fade down delay={500}>
+                                I am a recent graduate from the UC Berkeley Coding Bootcamp.
+                                    My skillset is in full-stack development, but I have a great ineterest in UX/UI and general
+                                    front end web development. I am always trying to learn something new and enjoy working
+                                    with others.
                                 </Fade>
-                            </p>
                             <Fade delay={1700} cascade>
                                 <table className="table text-center">
                                     <thead>
@@ -72,7 +69,6 @@ const Home = () => (
                                             <td>Express</td>
                                         </tr>
                                     </tbody>
-
                                 </table>
 
                                 <table className="table text-center">
