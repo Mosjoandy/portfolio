@@ -1,8 +1,8 @@
 import React from "react";
 import "./Home.css";
 import { Container, Row, Col, Section } from "../Grid";
-import Slide from 'react-reveal/Slide';
-import Flip from 'react-reveal/Flip';
+// import Slide from 'react-reveal/Slide';
+// import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
 
 const Home = () => (
@@ -30,7 +30,7 @@ const Home = () => (
                                     front end web development. I am always trying to learn something new and enjoy working
                                     with others.
                                 </Fade>
-                            <Fade delay={1700} cascade>
+                            <Fade delay={1200} cascade>
                                 <table className="table text-center">
                                     <thead>
                                         <tr>

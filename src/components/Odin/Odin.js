@@ -33,22 +33,20 @@ class Odin extends React.Component {
                                     <div className="card-body">
                                         <h1 className="text-center orTitle">Odin's Ravens</h1>
                                         <div className="card-body orBody">
-                                            <Flip delay={800} bottom cascade>
-                                                <p>
-                                                    Odin's Ravens is a digitized version of the card game from Osprey Games.
-                                                    In 2016, it was the winner of Games Expo Best Strategic Card and Dice Game.
-                                                </p>
-                                                <p>
-                                                    Our development team has converted all the card graphics into digital form
-                                                    to produce an online player versus player game.
-                                                </p>
-                                                <p>
-                                                    With working lobby chat and multiple game lobbies, players can play our
-                                                    version of Odin's Ravens online for free.
-                                                </p>
-                                            </Flip>
+
+                                            <Fade delay={800} top>
+                                                Odin's Ravens is a digitized version of the card game from Osprey Games.
+                                                In 2016, it was the winner of Games Expo Best Strategic Card and Dice Game.
+                                                    <br />
+                                                Our development team has converted all the card graphics into digital form
+                                                to produce an online player versus player game.
+                                                    <br />
+                                                With working lobby chat and multiple game lobbies, players can play our
+                                                version of Odin's Ravens online for free.
+                                                </Fade>
+
                                         </div>
-                                        <Flip bottom cascade delay={1000}>
+                                        <Fade top cascade delay={1000}>
                                             <div className="card-body orBody">
                                                 <p> Built with:&nbsp;
                                                     <img className="skillSetImg" src={require("../images/reactjs.svg")} alt="reactlogo" />React.js,&nbsp;
@@ -58,7 +56,7 @@ class Odin extends React.Component {
                                                     <img className="skillSetImg" src={require("../images/bootstrap.png")} alt="bootstraplogo" />Bootstrap.
                                             </p>
                                             </div>
-                                        </Flip>
+                                        </Fade>
                                         <div className="card-body">
                                             <h1 className="text-center">
                                                 <a href="https://odins-ravens.herokuapp.com/" target="_blank" rel="noopener noreferrer"><button className="playButton">Play Live</button></a>
@@ -71,26 +69,26 @@ class Odin extends React.Component {
                         </Col>
 
                         <Col size="md-6">
-
-                            <div id="projectCard" className="card">
-                                {/* {showMe ?
+                            <Fade left>
+                                <div id="projectCard" className="card">
+                                    {/* {showMe ?
                                     <Flip top>
                                         <div className="card-body">
                                             <img className="odinThingPic" src={require("../images/odinthing.png")} alt="odinthing" />
                                         </div>
                                     </Flip>
                                     : */}
-                                <Fade left>
+
                                     <Flash delay={1000} duration={300}>
                                         <div className="card-body"  >
                                             <img className="lokiPic" src={require("../images/loki.png")} alt="loki" />
                                             <img className="cardPic2" src={require("../images/cards2.png")} alt="cards2" />
                                         </div>
                                     </Flash>
-                                </Fade>
-                                {/* } */}
-                            </div>
 
+                                    {/* } */}
+                                </div>
+                            </Fade>
                         </Col>
                     </Row>
                 </Container>
