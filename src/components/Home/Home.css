@@ -9,8 +9,12 @@
 }
 
 #bioCard {
-    margin: 5vh 5vw;
+    margin: 5vh 0;
     word-wrap: break-word;
     border: none;
 }
 
+th, td {
+    border: none !important;
+    border-collapse: collapse;
+}

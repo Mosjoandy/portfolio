@@ -8,7 +8,7 @@ import Fade from 'react-reveal/Fade';
 const Home = () => (
 
     <Section>
-        <Container fluid>
+        <Container>
             <Row>
                 <Col size="md-6">
                     {/* <Fade left cascade> */}
@@ -27,8 +27,7 @@ const Home = () => (
                             <Fade down delay={500}>
                                 I am a recent graduate from the UC Berkeley Coding Bootcamp.
                                     My skillset is in full-stack development, but I have a great ineterest in UX/UI and general
-                                    front end web development. I am always trying to learn something new and enjoy working
-                                    with others.
+                                    front end web development. I am always trying to learn something new.
                                 </Fade>
                             <Fade delay={1200} cascade>
                                 <table className="table text-center">
