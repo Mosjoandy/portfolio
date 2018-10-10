@@ -5,7 +5,7 @@
 #projectCard {
     background-color: #00000000;
     margin: 5vh 0;
-    word-wrap: break-word;
+    word-wrap: normal;
     border: none;
 }
 

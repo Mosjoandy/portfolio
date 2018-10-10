@@ -36,14 +36,20 @@ class Odin extends React.Component {
                                         <div className="card-body orBody">
 
                                             <Fade delay={1000} cascade top duration={1200}>
-                                                Odin's Ravens is a digitized version of the card game from Osprey Games.
-                                                In 2016, it was the winner of Games Expo Best Strategic Card and Dice Game.
-                                                <br />
-                                                Our development team has converted all the card graphics into digital form
-                                                to produce an online player versus player experience.
-                                                <br />
-                                                With working lobby chat and multiple game lobbies, players can play our
-                                                version of Odin's Ravens online for free.
+                                                <div>
+                                                    <p>
+                                                        Odin's Ravens is a digitized version of the card game from Osprey Games.
+                                                        In 2016, it was the winner of Games Expo Best Strategic Card and Dice Game.
+                                                </p>
+                                                    <p>
+                                                        Our development team has converted all the card graphics into digital form
+                                                        to produce an online player versus player experience.
+                                                </p>
+                                                    <p>
+                                                        With working lobby chat and multiple game lobbies, players can play our
+                                                        version of Odin's Ravens online for free.
+                                                </p>
+                                                </div>
                                             </Fade>
 
                                         </div>

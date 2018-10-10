@@ -4,7 +4,7 @@ import './App.css';
 import Nav from './components/Nav';
 import Home from "./components/Home";
 import Odin from "./components/Odin";
-// import Contact from "./components/Contact";
+import Contact from "./components/Contact";
 
 class App extends Component {
 
@@ -15,7 +15,7 @@ class App extends Component {
         <Nav />
         <Home />
         <Odin />
-        {/* <Contact /> */}
+        <Contact />
       </div>
     );
   };
