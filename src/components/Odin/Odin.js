@@ -12,14 +12,7 @@ class Odin extends React.Component {
         };
     };
 
-    // componentDidMount() {
-    //     setInterval(() => {
-    //         this.setState({ exit: true })
-    //     }, 2500);
-    // };
-
     render() {
-        // let showMe = this.state.exit;
 
         return (
 
@@ -78,22 +71,7 @@ class Odin extends React.Component {
                         <Col size="md-6">
                             <Fade left>
                                 <div id="projectCard" className="card">
-                                    {/* {showMe ?
-                                    <Flip top>
-                                        <div className="card-body">
-                                            <img className="odinThingPic" src={require("../images/odinthing.png")} alt="odinthing" />
-                                        </div>
-                                    </Flip>
-                                    : */}
-
-                                    <div className="text-center card-body"  >
-                                        <img className="lokiPic" src={require("../images/loki.png")} alt="loki" />
-                                        <div>
-                                            <img className="cardPic2" src={require("../images/cards2.png")} alt="cards2" />
-                                        </div>
-                                    </div>
-
-                                    {/* } */}
+                                    <img className="lokiPic" src={require("../images/loki.png")} alt="loki" />
                                 </div>
                             </Fade>
                         </Col>

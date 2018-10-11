@@ -13,9 +13,10 @@ class App extends Component {
     return (
       <div>
         <Nav />
+        <Contact />
         <Home />
         <Odin />
-        <Contact />
+
       </div>
     );
   };

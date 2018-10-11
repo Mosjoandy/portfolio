@@ -60,8 +60,8 @@
     box-shadow: 0px 25px 15px -15px rgb(0, 0, 0, 0.5);
 }
 
-.lokiPic, .cardPic2 {
-    width: 20rem;
+.lokiPic, .cardPic2 {  
+    width: 40rem;
 }
 
 @media only screen and (max-width: 600px) {
