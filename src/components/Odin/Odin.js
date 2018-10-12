@@ -5,13 +5,7 @@ import Fade from "react-reveal/Fade";
 import Flash from "react-reveal/Flash";
 
 class Odin extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            exit: false,
-        };
-    };
-
+   
     render() {
 
         return (
