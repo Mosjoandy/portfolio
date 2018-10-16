@@ -2,18 +2,21 @@ import React from "react";
 import "./Projects.css";
 import Odin from "../Odin";
 import Share from "../Share";
-import Fade from "react-reveal";
+import Fade from "react-reveal/Fade";
+import { Container, Section } from "../../components/Grid";
 
 const Projects = () => (
 
-    <div>
-        <Fade duration={2000}>
-            <Odin />
-        </Fade>
-        {/* <Fade top collapse>
+    <Section>
+        <Container>
+            <Fade>
+                <Odin />
+            </Fade>
+            {/* <Fade top collapse>
             <Share />
         </Fade> */}
-    </div>
+        </Container>
+    </Section>
 );
 
 export default Projects;

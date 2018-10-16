@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Container, Row, Col, Section } from "../Grid";
 import "./Contact.css";
 import firebase from "../../utils/firebase";
-import Fade from "react-reveal";
+import Fade from "react-reveal/Fade";
 
 class Contact extends Component {
 

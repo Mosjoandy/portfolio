@@ -4,19 +4,22 @@ import { Container, Row, Col, Section } from "../Grid";
 // import Slide from 'react-reveal/Slide';
 // import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 
 const Home = () => (
 
     <Section>
         <Container>
             <Row>
-                <Col size="md-6">
-                    {/* <Fade left cascade> */}
-
-                    {/* </Fade> */}
+                <Col size="md-5">
+                    <Slide bottom>
+                        <div>
+                            <img id="profilePic" src={require("../images/profilepic.jpg")} alt="face" />
+                        </div>
+                    </Slide>
                 </Col>
 
-                <Col size="md-6">
+                <Col size="md-7">
                     <div id="bioCard" className="card">
                         <div className="card-body">
                             <h2>

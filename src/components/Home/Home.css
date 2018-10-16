@@ -18,3 +18,8 @@ th, td {
     border: none !important;
     border-collapse: collapse;
 }
+
+#profilePic {
+    margin: 5vh 0;
+    width: 100%;
+}

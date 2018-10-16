@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 import Share from "./components/Share";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
-import Fade from "react-reveal";
+import Fade from "react-reveal/Fade";
 
 class App extends Component {
 
