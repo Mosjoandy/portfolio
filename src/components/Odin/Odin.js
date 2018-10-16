@@ -1,10 +1,10 @@
 import React from "react";
 import "./Odin.css";
 import { Container, Row, Col, Section } from "../Grid";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 
 class Odin extends React.Component {
-   
+
     render() {
 
         return (
@@ -13,15 +13,15 @@ class Odin extends React.Component {
                 <Container>
                     <Row>
                         <Col size="md-6">
-                            <Fade right>
+                            {/* <Fade right> */}
                                 <div id="projectCard" className="card">
                                     <div className="card-body">
-                                        <Fade delay={800} top>
+                                        {/* <Fade> */}
                                             <h1 className="text-center orTitle">Odin's Ravens</h1>
-                                        </Fade>
+                                        {/* </Fade> */}
                                         <div className="card-body orBody">
 
-                                            <Fade delay={1000} cascade top duration={1200}>
+                                            {/* <Fade cascade duration={1200}> */}
                                                 <div>
                                                     <p>
                                                         Odin's Ravens is a digitized version of the card game from Osprey Games.
@@ -36,10 +36,10 @@ class Odin extends React.Component {
                                                         version of Odin's Ravens online for free.
                                                 </p>
                                                 </div>
-                                            </Fade>
+                                            {/* </Fade> */}
 
                                         </div>
-                                        <Fade top cascade delay={1000}>
+                                        {/* <Fade cascade> */}
                                             <div className="card-body orBody">
                                                 <p>
                                                     <img className="skillSetImg" src={require("../images/reactjs.svg")} alt="reactlogo" />React.js,&nbsp;
@@ -49,7 +49,7 @@ class Odin extends React.Component {
                                                     <img className="skillSetImg" src={require("../images/bootstrap.png")} alt="bootstraplogo" />Bootstrap
                                                 </p>
                                             </div>
-                                        </Fade>
+                                        {/* </Fade> */}
                                         <div className="card-body">
                                             <h1 className="text-center">
                                                 <a href="https://odins-ravens.herokuapp.com/" target="_blank" rel="noopener noreferrer"><button className="playButton">Play Live</button></a>
@@ -58,15 +58,15 @@ class Odin extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                            </Fade>
+                            {/* </Fade> */}
                         </Col>
 
                         <Col size="md-6">
-                            <Fade left>
+                            {/* <Fade> */}
                                 <div id="projectCard" className="card">
                                     <img className="lokiPic" src={require("../images/loki.png")} alt="loki" />
                                 </div>
-                            </Fade>
+                            {/* </Fade> */}
                         </Col>
                     </Row>
                 </Container>

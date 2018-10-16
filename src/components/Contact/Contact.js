@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Container, Row, Col, Section } from "../Grid";
 import "./Contact.css";
 import firebase from "../../utils/firebase";
-import Slide from "react-reveal";
+import Fade from "react-reveal";
 
 class Contact extends Component {
 
@@ -50,50 +50,55 @@ class Contact extends Component {
                         </Col>
                         <Col size="md-6">
                             {!this.state.submitted ? (
-                                <Slide bottom>
+                                <div>
 
                                     <div className="card border-0" id="middle">
                                         <h1 className="text-center">
-                                            Contact
+                                            <Fade bottom>
+                                                Contact
+                                            </Fade>
                                         </h1>
                                         <div className="card-body">
-                                            <p>
-                                                Please send me a message and your email!
-                                            </p>
-
+                                            <Fade bottom>
+                                                <p>
+                                                    Please send me a message and your email!
+                                                </p>
+                                            </Fade>
                                         </div>
 
                                         <form onSubmit={this.handleSubmit}>
-                                            <div className="form-group">
-                                                <label className="contactLabel">Name: </label>
-                                                <input type="text" className="form-control mt-1 mb-3" name="name" onChange={this.handleChange} required />
+                                            <Fade bottom cascade>
+                                                <div className="form-group">
+                                                    <label className="contactLabel">Name: </label>
+                                                    <input type="text" className="form-control mt-1 mb-3" name="name" onChange={this.handleChange} required />
 
-                                                <label className="contactLabel">Email: </label>
-                                                <input type="email" className="form-control mt-1 mb-3" name="email" onChange={this.handleChange} required />
+                                                    <label className="contactLabel">Email: </label>
+                                                    <input type="email" className="form-control mt-1 mb-3" name="email" onChange={this.handleChange} required />
 
-                                                <label className="contactMessage">Message: </label>
-                                                <textarea type="text" className="form-control mt-1 mb-3" rows="4" name="message" onChange={this.handleChange} required />
-                                            </div>
-                                            <button type="submit"
-                                                className="btn"
-                                                value="Submit"
-                                            >Send</button>
+                                                    <label className="contactMessage">Message: </label>
+                                                    <textarea type="text" className="form-control mt-1 mb-3" rows="4" name="message" onChange={this.handleChange} required />
+                                                </div>
+                                                <button type="submit"
+                                                    className="btn"
+                                                    value="Submit"
+                                                >Send</button>
+                                            </Fade>
                                         </form>
                                     </div>
-
-                                </Slide>
-
+                                </div>
                             ) : (
                                     <div className="card text-center border-0">
-                                        <Slide bottom>
-                                            <h1>Thanks! I'll be in contact with you soon, {this.state.name}</h1>
-                                        </Slide>
+
+                                        <h1>
+                                            <Fade bottom>
+                                                Thanks! I'll be in contact with you soon, {this.state.name}
+                                            </Fade>
+                                        </h1>
                                     </div>
                                 )}
                         </Col>
 
                         <Col size="md-3">
-
                         </Col>
                     </Row>
                 </Container>
