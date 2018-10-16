@@ -2,7 +2,6 @@ import React from "react";
 import "./Share.css";
 import { Container, Row, Col, Section } from "../Grid";
 import Fade from "react-reveal/Fade";
-import Flash from "react-reveal/Flash";
 
 class Share extends React.Component {
 
