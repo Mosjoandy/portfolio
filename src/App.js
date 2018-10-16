@@ -23,7 +23,7 @@ class App extends Component {
             <Route exact path="/projects" component={Projects} />
             {/* <Route exact path="/odin" component={Odin} />
             <Route exact path="/share" component={Share} /> */}
-            <Fade duration={4000}>
+            <Fade duration={2000}>
               <Route exact path="/contact" component={Contact} />
             </Fade>
           </Switch>
