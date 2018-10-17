@@ -32,7 +32,7 @@ const Home = () => (
                                     front end web development. I am always trying to learn something new.
                                 </Fade>
                             <Fade delay={1200} cascade>
-                                <div id="accordion" className="w-100">
+                                <div id="accordion" className="w-100 border-0 bg-transparent">
 
                                     <div class="card w-100">
                                         <div class="card-header" id="headingOne">
@@ -63,8 +63,28 @@ const Home = () => (
                                                 </button>
                                             </h5>
                                         </div>
-                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
                                             <div class="card-body">
+                                                <table className="table text-center">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col"></th>
+                                                            <th scope="col"></th>
+                                                            <th scope="col"></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><img className="skillSetImg" src={require("../images/html5.png")} alt="html5logo" />HTML5</td>
+                                                            <td><img className="skillSetImg" src={require("../images/mysql.png")} alt="mysqllogo" />MySQL</td>
+                                                            <td><img className="skillSetImg" src={require("../images/html5.png")} alt="html5logo" />HTML5</td>
+
+                                                        </tr>
+
+                                                    </tbody>
+
+
+                                                </table>
                                                 <img className="skillSetImg" src={require("../images/mysql.png")} alt="mysqllogo" />MySQL, {" "}
                                                 <img className="skillSetImg" src={require("../images/mongodb.png")} alt="mongodblogo" />MongoDB, {" "}
                                                 <img className="skillSetImg" src={require("../images/firebase.png")} alt="firebaselogo" />Google Firebase, {" "}
