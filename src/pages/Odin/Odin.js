@@ -2,7 +2,7 @@ import React from "react";
 import "./Odin.css";
 import { Container, Row, Col, Section } from "../../components/Grid";
 import Fade from "react-reveal/Fade";
-import Projects from "../Projects";
+// import Projects from "../Projects";
 
 class Odin extends React.Component {
 

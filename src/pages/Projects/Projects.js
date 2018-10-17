@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Projects.css";
-import Odin from "../Odin";
-import Share from "../Share";
-import Fade from "react-reveal/Fade";
-import { Container, Row, Col, Section } from "../../components/Grid";
+// import Odin from "../Odin";
+// import Share from "../Share";
+// import Fade from "react-reveal/Fade";
+// import { Container, Row, Col, Section } from "../../components/Grid";
 
 class Projects extends Component {
 

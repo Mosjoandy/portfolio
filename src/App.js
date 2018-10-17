@@ -7,8 +7,8 @@ import Odin from "./pages/Odin";
 import Contact from "./pages/Contact";
 import Share from "./pages/Share";
 import Footer from "./components/Footer";
-import Projects from "./pages/Projects";
-import Fade from "react-reveal/Fade";
+// import Projects from "./pages/Projects";
+// import Fade from "react-reveal/Fade";
 
 class App extends Component {
 

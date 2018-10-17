@@ -4,21 +4,27 @@ import "./Nav.css";
 
 const Nav = () => (
   <nav className="navbar navbar-expand-lg navbar-light">
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+    </button> */}
+    <div className="mx-auto" id="navbarNavAltMarkup">
       <div className="navbar-nav mx-auto">
         <li className="nav-item">
           <Link to="/" id="navButtons" className={window.location.pathname === "/" ? "nav-link" : "nav-link"}>
             About
               </Link>
         </li>
-        <div class="btn-group dropbottom">
-          <div class={window.location.pathname === "/odin" || "/share" ? "btn dropdown-toggle nav-link" : "nav-link"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li className="nav-item">
+          <Link to="/Contact" id="navButtonsLast" className={window.location.pathname === "/contact" ? "nav-link" : "nav-link"}>
+            Contact
+              </Link>
+        </li>
+
+        <div className="btn-group dropbottom">
+          <div className={window.location.pathname === "/odin" || "/share" ? "btn dropdown-toggle nav-link" : "nav-link"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Projects
           </div>
-          <div class="dropdown-menu">
+          <div className="dropdown-menu">
             <li className="nav-item">
               <Link to="/odin" id="navButtons" className={window.location.pathname === "/odin" ? "nav-link" : "nav-link"}>
                 Odin
@@ -31,11 +37,7 @@ const Nav = () => (
             </li>
           </div>
         </div>
-        <li className="nav-item">
-          <Link to="/Contact" id="navButtonsLast" className={window.location.pathname === "/contact" ? "nav-link" : "nav-link"}>
-            Contact
-              </Link>
-        </li>
+
       </div>
     </div>
   </nav>

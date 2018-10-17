@@ -34,16 +34,16 @@ const Home = () => (
                             <Fade delay={1200} cascade>
                                 <div id="accordion" className="w-100">
 
-                                    <div class="card w-100">
-                                        <div class="card-header" id="headingOne">
-                                            <h5 class="mb-0">
-                                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <div className="card w-100">
+                                        <div className="card-header" id="headingOne">
+                                            <h5 className="mb-0">
+                                                <button className="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                                     Front-End Technology
                                                 </button>
                                             </h5>
                                         </div>
-                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                            <div class="card-body">
+                                        <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div className="card-body">
                                                 <table className="table text-center">
                                                     <thead className="collapse">
                                                         <tr>
@@ -72,16 +72,16 @@ const Home = () => (
                                         </div>
                                     </div>
 
-                                    <div class="card">
-                                        <div class="card-header" id="headingTwo">
-                                            <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <div className="card">
+                                        <div className="card-header" id="headingTwo">
+                                            <h5 className="mb-0">
+                                                <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                     Back-End Technology
                                                 </button>
                                             </h5>
                                         </div>
-                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                            <div class="card-body">
+                                        <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                            <div className="card-body">
                                                 <table className="table text-center">
                                                     <thead className="collapse">
                                                         <tr>
@@ -111,16 +111,16 @@ const Home = () => (
                                         </div>
                                     </div>
 
-                                    <div class="card">
-                                        <div class="card-header" id="headingThree">
-                                            <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <div className="card">
+                                        <div className="card-header" id="headingThree">
+                                            <h5 className="mb-0">
+                                                <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                                     Web Hosting / Version Control
                                                 </button>
                                             </h5>
                                         </div>
-                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                            <div class="card-body">
+                                        <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                            <div className="card-body">
                                                 <table className="table text-center">
                                                     <thead className="collapse">
                                                         <tr>

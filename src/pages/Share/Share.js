@@ -2,7 +2,7 @@ import React from "react";
 import "./Share.css";
 import { Container, Row, Col, Section } from "../../components/Grid";
 import Fade from "react-reveal/Fade";
-import Projects from "../Projects";
+// import Projects from "../Projects";
 
 class Share extends React.Component {
 
@@ -15,16 +15,16 @@ class Share extends React.Component {
                         {/* <Projects /> */}
                         <Row>
                             <Col size="md-6">
-                                <Fade left>
-                                    <div id="shareCard" className="card">
-                                        <img className="lokiPic rounded" src={require("../../components/images/sharePic.png")} alt="share picture" />
+                                <Fade right>
+                                    <div id="shareCardPic" className="card">
+                                        <img className="sharePicZoom rounded" src={require("../../components/images/sharePic.png")} alt="shareBnb" />
                                     </div>
 
                                 </Fade>
                             </Col>
 
                             <Col size="md-6">
-                                <Fade right>
+                                <Fade left>
                                     <div id="shareCard" className="card text-white">
                                         <div className="card-body">
                                             <Fade delay={800} top>
@@ -66,8 +66,8 @@ class Share extends React.Component {
                                             </Fade>
                                             <div className="card-body">
                                                 <h1 className="text-center">
-                                                    <a href="https://odins-ravens.herokuapp.com/" target="_blank" rel="noopener noreferrer"><button className="playButton">Play Live</button></a>
-                                                    <a href="https://github.com/Mosjoandy/OdinsWorld" target="_blank" rel="noopener noreferrer"><img id="linksIcon" src={require("../../components/images/github.png")} alt="github icon" /></a>
+                                                    <a href="https://mysterious-cliffs-66031.herokuapp.com/" target="_blank" rel="noopener noreferrer"><button className="shareButton btn btn-success">Live Website</button></a>
+                                                    <a href="https://github.com/Mosjoandy/ShareBnb" target="_blank" rel="noopener noreferrer"><img id="linksIcon" src={require("../../components/images/github.png")} alt="github icon" /></a>
                                                 </h1>
                                             </div>
                                         </div>
