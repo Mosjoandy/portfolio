@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home.css";
-import { Container, Row, Col, Section } from "../Grid";
+import { Container, Row, Col, Section } from "../../components/Grid";
 // import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
-
+// import Arrow from "../../components/Arrow";
 
 const Home = () => (
 
@@ -13,7 +13,7 @@ const Home = () => (
                 <Col size="md-5">
                     <Fade duration={2500}>
                         <div>
-                            <img className="rounded-circle" id="profilePic" src={require("../images/profilepic.jpg")} alt="face" />
+                            <img className="rounded-circle" id="profilePic" src={require("../../components/images/profilepic.jpg")} alt="face" />
                         </div>
                     </Fade>
                 </Col>
@@ -32,25 +32,42 @@ const Home = () => (
                                     front end web development. I am always trying to learn something new.
                                 </Fade>
                             <Fade delay={1200} cascade>
-                                <div id="accordion" className="w-100 border-0 bg-transparent">
+                                <div id="accordion" className="w-100">
 
                                     <div class="card w-100">
                                         <div class="card-header" id="headingOne">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                                     Front-End Technology
                                                 </button>
                                             </h5>
                                         </div>
                                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                                             <div class="card-body">
-                                                <img className="skillSetImg" src={require("../images/html5.png")} alt="html5logo" />HTML5, {" "}
-                                                <img className="skillSetImg" src={require("../images/css3.png")} alt="css3logo" />CSS3, {" "}
-                                                <img className="skillSetImg" src={require("../images/es6.png")} alt="es6logo" />ES6, {" "}
-                                                <img className="skillSetImg" src={require("../images/reactjs.svg")} alt="reactlogo" />React.js, {" "}
-                                                <img className="skillSetImg" src={require("../images/jquery.png")} alt="jquerylogo" />jQuery, {" "}
-                                                <img className="skillSetImg" src={require("../images/bootstrap.png")} alt="bootstraplogo" />Bootstrap, {" "}
-                                                <img className="skillSetImg" src={require("../images/handlebars.png")} alt="handlebarslogo" />Handlebars.js
+                                                <table className="table text-center">
+                                                    <thead className="collapse">
+                                                        <tr>
+                                                            <th scope="col"></th>
+                                                            <th scope="col"></th>
+                                                            <th scope="col"></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><img className="skillSetImg" src={require("../../components/images/html5.png")} alt="html5logo" />HTML5</td>
+                                                            <td><img className="skillSetImg" src={require("../../components/images/css3.png")} alt="css3logo" />CSS3</td>
+                                                            <td><img className="skillSetImg" src={require("../../components/images/es6.png")} alt="es6logo" />ES6</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img className="skillSetImg" src={require("../../components/images/reactjs.svg")} alt="reactlogo" />React.js</td>
+                                                            <td><img className="skillSetImg" src={require("../../components/images/jquery.png")} alt="jquerylogo" />jQuery</td>
+                                                            <td><img className="skillSetImg" src={require("../../components/images/bootstrap.png")} alt="bootstraplogo" />Bootstrap</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img className="skillSetImg" src={require("../../components/images/handlebars.png")} alt="handlebarslogo" />Handlebars.js</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
@@ -63,10 +80,10 @@ const Home = () => (
                                                 </button>
                                             </h5>
                                         </div>
-                                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                             <div class="card-body">
                                                 <table className="table text-center">
-                                                    <thead>
+                                                    <thead className="collapse">
                                                         <tr>
                                                             <th scope="col"></th>
                                                             <th scope="col"></th>
@@ -75,22 +92,21 @@ const Home = () => (
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><img className="skillSetImg" src={require("../images/html5.png")} alt="html5logo" />HTML5</td>
-                                                            <td><img className="skillSetImg" src={require("../images/mysql.png")} alt="mysqllogo" />MySQL</td>
-                                                            <td><img className="skillSetImg" src={require("../images/html5.png")} alt="html5logo" />HTML5</td>
-
+                                                            <td><img className="skillSetImg" src={require("../../components/images/mongodb.png")} alt="mongodblogo" />MongoDB</td>
+                                                            <td><img className="skillSetImg" src={require("../../components/images/mysql.png")} alt="mysqllogo" />MySQL</td>
+                                                            <td><img className="skillSetImg" src={require("../../components/images/firebase.png")} alt="firebaselogo" />Google Firebase</td>
                                                         </tr>
-
+                                                        <tr>
+                                                            <td><img className="skillSetImg" src={require("../../components/images/node.png")} alt="nodelogo" />Node.js</td>
+                                                            <td><img className="skillSetImg" src={require("../../components/images/ajax.png")} alt="ajaxlogo" />AJAX</td>
+                                                            <td><img className="skillSetImg" src={require("../../components/images/html5.png")} alt="html5logo" />HTML5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Axios</td>
+                                                            <td>Express</td>
+                                                        </tr>
                                                     </tbody>
-
-
                                                 </table>
-                                                <img className="skillSetImg" src={require("../images/mysql.png")} alt="mysqllogo" />MySQL, {" "}
-                                                <img className="skillSetImg" src={require("../images/mongodb.png")} alt="mongodblogo" />MongoDB, {" "}
-                                                <img className="skillSetImg" src={require("../images/firebase.png")} alt="firebaselogo" />Google Firebase, {" "}
-                                                <img className="skillSetImg" src={require("../images/node.png")} alt="nodelogo" />Node.js, {" "}
-                                                <img className="skillSetImg" src={require("../images/ajax.png")} alt="ajaxlogo" />AJAX, Axios, Express
-
                                             </div>
                                         </div>
                                     </div>
@@ -105,8 +121,22 @@ const Home = () => (
                                         </div>
                                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                             <div class="card-body">
-                                                <img className="skillSetImg" src={require("../images/heroku.png")} alt="herokulogo" />Heroku
-                                                <img className="skillSetImg" src={require("../images/github.png")} alt="githublogo" />Git
+                                                <table className="table text-center">
+                                                    <thead className="collapse">
+                                                        <tr>
+                                                            <th scope="col"></th>
+                                                            <th scope="col"></th>
+                                                            {/* <th scope="col"></th> */}
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><img className="skillSetImg" src={require("../../components/images/heroku.png")} alt="herokulogo" />Heroku</td>
+                                                            <td><img className="skillSetImg" src={require("../../components/images/github.png")} alt="githublogo" />Git</td>
+                                                            {/* <td></td> */}
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>

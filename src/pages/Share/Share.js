@@ -1,6 +1,6 @@
 import React from "react";
 import "./Share.css";
-import { Container, Row, Col, Section } from "../Grid";
+import { Container, Row, Col, Section } from "../../components/Grid";
 import Fade from "react-reveal/Fade";
 
 class Share extends React.Component {
@@ -42,18 +42,18 @@ class Share extends React.Component {
                                         <Fade top cascade delay={1000}>
                                             <div className="card-body orBody">
                                                 <p>
-                                                    <img className="skillSetImg" src={require("../images/reactjs.svg")} alt="reactlogo" />React.js,&nbsp;
-                                                    <img className="skillSetImg" src={require("../images/firebase.png")} alt="firebaselogo" />Google Firebase,&nbsp;
-                                                    <img className="skillSetImg" src={require("../images/html5.png")} alt="html5logo" />HTML5,&nbsp;
-                                                    <img className="skillSetImg" src={require("../images/css3.png")} alt="css3logo" />CSS3,&nbsp;
-                                                    <img className="skillSetImg" src={require("../images/bootstrap.png")} alt="bootstraplogo" />Bootstrap
+                                                    <img className="skillSetImg" src={require("../../components/images/reactjs.svg")} alt="reactlogo" />React.js,&nbsp;
+                                                    <img className="skillSetImg" src={require("../../components/images/firebase.png")} alt="firebaselogo" />Google Firebase,&nbsp;
+                                                    <img className="skillSetImg" src={require("../../components/images/html5.png")} alt="html5logo" />HTML5,&nbsp;
+                                                    <img className="skillSetImg" src={require("../../components/images/css3.png")} alt="css3logo" />CSS3,&nbsp;
+                                                    <img className="skillSetImg" src={require("../../components/images/bootstrap.png")} alt="bootstraplogo" />Bootstrap
                                                 </p>
                                             </div>
                                         </Fade>
                                         <div className="card-body">
                                             <h1 className="text-center">
                                                 <a href="https://odins-ravens.herokuapp.com/" target="_blank" rel="noopener noreferrer"><button className="playButton">Play Live</button></a>
-                                                <a href="https://github.com/Mosjoandy/OdinsWorld" target="_blank" rel="noopener noreferrer"><img id="linksIcon" src={require("../images/github.png")} alt="github icon" /></a>
+                                                <a href="https://github.com/Mosjoandy/OdinsWorld" target="_blank" rel="noopener noreferrer"><img id="linksIcon" src={require("../../components/images/github.png")} alt="github icon" /></a>
                                             </h1>
                                         </div>
                                     </div>
@@ -64,7 +64,7 @@ class Share extends React.Component {
                         <Col size="md-6">
                             <Fade left>
                                 <div id="projectCard" className="card">
-                                    <img className="lokiPic" src={require("../images/loki.png")} alt="loki" />
+                                    <img className="lokiPic" src={require("../../components/images/loki.png")} alt="loki" />
                                 </div>
                             </Fade>
                         </Col>

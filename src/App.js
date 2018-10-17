@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from './components/Nav';
-import Home from "./components/Home";
-import Odin from "./components/Odin";
-import Contact from "./components/Contact";
-import Share from "./components/Share";
+import Home from "./pages/Home";
+import Odin from "./pages/Odin";
+import Contact from "./pages/Contact";
+import Share from "./pages/Share";
 import Footer from "./components/Footer";
-import Projects from "./components/Projects";
+import Projects from "./pages/Projects";
 import Fade from "react-reveal/Fade";
 
 class App extends Component {
