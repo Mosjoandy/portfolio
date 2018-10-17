@@ -20,9 +20,9 @@ class App extends Component {
           <Nav />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/projects" component={Projects} />
-            {/* <Route exact path="/odin" component={Odin} />
-            <Route exact path="/share" component={Share} /> */}
+            {/* <Route exact path="/projects" component={Projects} /> */}
+            <Route exact path="/odin" component={Odin} />
+            <Route exact path="/share" component={Share} />
             <Fade duration={2000}>
               <Route exact path="/contact" component={Contact} />
             </Fade>

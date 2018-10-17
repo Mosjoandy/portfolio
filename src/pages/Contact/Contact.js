@@ -48,10 +48,10 @@ class Contact extends Component {
                     <Row>
                         <Col size="md-3">
                         </Col>
+
                         <Col size="md-6">
                             {!this.state.submitted ? (
-                                <div>
-
+                                <div id="contactCard">
                                     <div className="card border-0" id="middle">
                                         <h1 className="text-center">
                                             <Fade bottom>
@@ -87,13 +87,15 @@ class Contact extends Component {
                                     </div>
                                 </div>
                             ) : (
-                                    <div className="card text-center border-0">
+                                    <div id="contactCard">
+                                        <div className="card text-center border-0">
 
-                                        <h1>
-                                            <Fade bottom>
-                                                Thanks! I'll be in contact with you soon, {this.state.name}
-                                            </Fade>
-                                        </h1>
+                                            <h1>
+                                                <Fade bottom>
+                                                    Thanks! I'll be in contact with you soon, {this.state.name}
+                                                </Fade>
+                                            </h1>
+                                        </div>
                                     </div>
                                 )}
                         </Col>
