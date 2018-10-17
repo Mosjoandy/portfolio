@@ -59,7 +59,7 @@ class Contact extends Component {
                                             </Fade>
                                         </h1>
                                         <div className="card-body">
-                                            <Fade bottom>
+                                            <Fade bottom delay={800}>
                                                 <p>
                                                     Please send me a message and your email!
                                                 </p>
@@ -67,7 +67,7 @@ class Contact extends Component {
                                         </div>
 
                                         <form onSubmit={this.handleSubmit}>
-                                            <Fade bottom cascade>
+                                            <Fade bottom cascade delay={1200}>
                                                 <div className="form-group">
                                                     <label className="contactLabel">Name: </label>
                                                     <input type="text" className="form-control mt-1 mb-3" name="name" onChange={this.handleChange} required />
@@ -78,10 +78,11 @@ class Contact extends Component {
                                                     <label className="contactMessage">Message: </label>
                                                     <textarea type="text" className="form-control mt-1 mb-3" rows="4" name="message" onChange={this.handleChange} required />
                                                 </div>
-                                                <button type="submit"
-                                                    className="btn"
-                                                    value="Submit"
-                                                >Send</button>
+                                                <Fade bottom delay={2000}>
+                                                    <button type="submit" className="btn" value="Submit">
+                                                        Send
+                                                    </button>
+                                                </Fade>
                                             </Fade>
                                         </form>
                                     </div>

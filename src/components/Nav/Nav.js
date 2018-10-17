@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Col } from "../Grid";
 import "./Nav.css";
 
 const Nav = () => (

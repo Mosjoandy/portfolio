@@ -1,11 +1,10 @@
-.sharebg {
-    /* background-image: url("../images/odinbg.png"); */
-    background-color: orange;
-
-
+#shareProject {
+    background-image: url("../../components/images/bbq1-sm.jpg");
 }
 
-.shareContent {
-    height: 50rem;
-    width: 100%;
+#shareCard {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 5vh 0;
+    border: none;
+
 }

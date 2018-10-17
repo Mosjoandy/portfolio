@@ -115,7 +115,7 @@ const Home = () => (
                                         <div class="card-header" id="headingThree">
                                             <h5 class="mb-0">
                                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    Web Hosting / Version Controlled
+                                                    Web Hosting / Version Control
                                                 </button>
                                             </h5>
                                         </div>
