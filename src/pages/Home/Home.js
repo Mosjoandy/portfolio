@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 
 const Home = () => (
 
-    <Section>
+    <Section id="aboutScroll">
         <Container>
             <Row>
                 <Col size="md-5">

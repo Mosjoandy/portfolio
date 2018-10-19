@@ -43,7 +43,7 @@ class Contact extends Component {
 
     render() {
         return (
-            <Section>
+            <Section id="contactScroll">
                 <Container>
                     <Row>
                         <Col size="md-3">

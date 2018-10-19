@@ -3,9 +3,8 @@
 }
 
 #shareCard {
-    background: rgba(0, 0, 0, 0.3);
-    margin: 5vh 0;
-    border: none;
+    background-image: url("../../components/images/bbq1-sm.jpg");
+    word-wrap: normal;
 
 }
 

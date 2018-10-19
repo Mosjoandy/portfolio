@@ -3,10 +3,8 @@
 }
 
 #odinCard {
-    background-color: #00000000;
-    margin: 5vh 0;
+    background-image: url(../../components/images/paper.jpg);
     word-wrap: normal;
-    border: none;
 }
 
 .orTitle {
