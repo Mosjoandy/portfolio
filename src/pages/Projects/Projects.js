@@ -28,8 +28,10 @@ class Projects extends Component {
                 <Container>
                     <Row>
                         <Col size="md-12">
-                            <Odin />
-                            <Share />
+                            <div className="card-deck">
+                                <Odin />
+                                <Share />
+                            </div>
                         </Col>
                     </Row>
                 </Container>

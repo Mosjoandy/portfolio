@@ -3,17 +3,19 @@ import React from "react";
 import "./Nav.css";
 
 const Nav = () => (
-  <ul className="nav justify-content-center">
-    <li className="nav-item">
-      <a className="nav-link" type="btn" role="button" href="#aboutScroll">About</a>
-    </li>
-    <li className="nav-item">
-      <a className="nav-link" type="btn" role="button" href="#projectScroll">Projects</a>
-    </li>
-    <li className="nav-item">
-      <a className="nav-link" type="btn" role="button" href="#contactScroll">Contact</a>
-    </li>
-  </ul>
+  <nav id="topBar" className="navbar-fixed-top navbar-transparent">
+    <ul className="nav justify-content-center">
+      <li className="nav-item">
+        <a className="nav-link" type="btn" role="button" href="#aboutScroll">About</a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" type="btn" role="button" href="#projectScroll">Projects</a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" type="btn" role="button" href="#contactScroll">Contact</a>
+      </li>
+    </ul>
+  </nav>
   // <nav className="navbar navbar-expand-lg navbar-light">
   //   {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
   //     <span className="navbar-toggler-icon"></span>

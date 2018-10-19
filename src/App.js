@@ -31,6 +31,7 @@ class App extends Component {
       <div>
         <Nav />
         <Home />
+
         <Projects />
         <Contact />
         <Footer />

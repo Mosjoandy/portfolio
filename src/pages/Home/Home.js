@@ -6,143 +6,160 @@ import Fade from 'react-reveal/Fade';
 // import Arrow from "../../components/Arrow";
 
 const Home = () => (
-
-    <Section id="aboutScroll">
-        <Container>
-            <Row>
-                <Col size="md-5">
-                    <Fade duration={2500}>
-                        <div>
-                            <img className="rounded-circle" id="profilePic" src={require("../../components/images/profilepic.jpg")} alt="face" />
-                        </div>
-                    </Fade>
-                </Col>
-
-                <Col size="md-7">
-                    <div id="bioCard" className="card">
-                        <div className="card-body">
-                            <h2>
-                                <Fade down>
-                                    Hi there, I'm Nick.
-                                </Fade>
-                            </h2>
-                            <Fade down delay={500}>
-                                I am a recent graduate from the UC Berkeley Coding Bootcamp.
-                                    My skillset is in full-stack development, but I have a great ineterest in UX/UI and general
-                                    front end web development. I am always trying to learn something new.
-                                </Fade>
-                            <Fade delay={1200} cascade>
-                                <div id="accordion" className="w-100">
-
-                                    <div className="card w-100">
-                                        <div className="card-header" id="headingOne">
-                                            <h5 className="mb-0">
-                                                <button className="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                    Front-End Technology
-                                                </button>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                            <div className="card-body">
-                                                <table className="table text-center">
-                                                    <thead className="collapse">
-                                                        <tr>
-                                                            <th scope="col"></th>
-                                                            <th scope="col"></th>
-                                                            <th scope="col"></th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td><img className="skillSetImg" src={require("../../components/images/html5.png")} alt="html5logo" />HTML5</td>
-                                                            <td><img className="skillSetImg" src={require("../../components/images/css3.png")} alt="css3logo" />CSS3</td>
-                                                            <td><img className="skillSetImg" src={require("../../components/images/es6.png")} alt="es6logo" />ES6</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><img className="skillSetImg" src={require("../../components/images/reactjs.svg")} alt="reactlogo" />React.js</td>
-                                                            <td><img className="skillSetImg" src={require("../../components/images/jquery.png")} alt="jquerylogo" />jQuery</td>
-                                                            <td><img className="skillSetImg" src={require("../../components/images/bootstrap.png")} alt="bootstraplogo" />Bootstrap</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><img className="skillSetImg" src={require("../../components/images/handlebars.png")} alt="handlebarslogo" />Handlebars.js</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="card">
-                                        <div className="card-header" id="headingTwo">
-                                            <h5 className="mb-0">
-                                                <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    Back-End Technology
-                                                </button>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                            <div className="card-body">
-                                                <table className="table text-center">
-                                                    <thead className="collapse">
-                                                        <tr>
-                                                            <th scope="col"></th>
-                                                            <th scope="col"></th>
-                                                            <th scope="col"></th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td><img className="skillSetImg" src={require("../../components/images/mongodb.png")} alt="mongodblogo" />MongoDB</td>
-                                                            <td><img className="skillSetImg" src={require("../../components/images/mysql.png")} alt="mysqllogo" />MySQL</td>
-                                                            <td><img className="skillSetImg" src={require("../../components/images/firebase.png")} alt="firebaselogo" />Google Firebase</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><img className="skillSetImg" src={require("../../components/images/node.png")} alt="nodelogo" />Node.js</td>
-                                                            <td><img className="skillSetImg" src={require("../../components/images/ajax.png")} alt="ajaxlogo" />AJAX</td>
-                                                            <td><img className="skillSetImg" src={require("../../components/images/html5.png")} alt="html5logo" />HTML5</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Axios</td>
-                                                            <td>Express</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="card">
-                                        <div className="card-header" id="headingThree">
-                                            <h5 className="mb-0">
-                                                <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    Web Hosting / Version Control
-                                                </button>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                            <div className="card-body">
-                                                <table className="table text-center">
-                                                    <thead className="collapse">
-                                                        <tr>
-                                                            <th scope="col"></th>
-                                                            <th scope="col"></th>
-                                                            {/* <th scope="col"></th> */}
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td><img className="skillSetImg" src={require("../../components/images/heroku.png")} alt="herokulogo" />Heroku</td>
-                                                            <td><img className="skillSetImg" src={require("../../components/images/github.png")} alt="githublogo" />Git</td>
-                                                            {/* <td></td> */}
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
+    <div>
+        <Section id="aboutScroll">
+            <Container fluid>
+                <Row>
+                    <Col size="md-12">
+                        <div id="mumboJumbo">
+                            <div className="jumbotron border-0 bg-transparent text-center">
+                                <div className="container">
+                                    <h1 className="display-4">Nicholas Chan</h1>
+                                    <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
                                 </div>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </Section>
 
-                                {/* <table className="table text-center">
+        <Section>
+            <Container>
+                <Row>
+                    <Col size="md-5">
+                        <Fade duration={2500}>
+                            <div>
+                                <img className="rounded-circle" id="profilePic" src={require("../../components/images/profilepic.jpg")} alt="face" />
+                            </div>
+                        </Fade>
+                    </Col>
+
+                    <Col size="md-7">
+                        <div id="bioCard" className="card">
+                            <div className="card-body">
+                                <h2>
+                                    <Fade down>
+                                        Hi there, I'm Nick.
+                                </Fade>
+                                </h2>
+                                <Fade down delay={500}>
+                                    I am a recent graduate from the UC Berkeley Coding Bootcamp.
+                                        My skillset is in full-stack development, but I have a great ineterest in UX/UI and general
+                                        front end web development. I am always trying to learn something new.
+                                </Fade>
+                                <Fade delay={1200} cascade>
+                                    <div id="accordion" className="w-100">
+
+                                        <div className="card w-100">
+                                            <div className="card-header" id="headingOne">
+                                                <h5 className="mb-0">
+                                                    <button className="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                        Front-End Technology
+                                                </button>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                                <div className="card-body">
+                                                    <table className="table text-center">
+                                                        <thead className="collapse">
+                                                            <tr>
+                                                                <th scope="col"></th>
+                                                                <th scope="col"></th>
+                                                                <th scope="col"></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><img className="skillSetImg" src={require("../../components/images/html5.png")} alt="html5logo" />HTML5</td>
+                                                                <td><img className="skillSetImg" src={require("../../components/images/css3.png")} alt="css3logo" />CSS3</td>
+                                                                <td><img className="skillSetImg" src={require("../../components/images/es6.png")} alt="es6logo" />ES6</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><img className="skillSetImg" src={require("../../components/images/reactjs.svg")} alt="reactlogo" />React.js</td>
+                                                                <td><img className="skillSetImg" src={require("../../components/images/jquery.png")} alt="jquerylogo" />jQuery</td>
+                                                                <td><img className="skillSetImg" src={require("../../components/images/bootstrap.png")} alt="bootstraplogo" />Bootstrap</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><img className="skillSetImg" src={require("../../components/images/handlebars.png")} alt="handlebarslogo" />Handlebars.js</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="card">
+                                            <div className="card-header" id="headingTwo">
+                                                <h5 className="mb-0">
+                                                    <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Back-End Technology
+                                                </button>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                                <div className="card-body">
+                                                    <table className="table text-center">
+                                                        <thead className="collapse">
+                                                            <tr>
+                                                                <th scope="col"></th>
+                                                                <th scope="col"></th>
+                                                                <th scope="col"></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><img className="skillSetImg" src={require("../../components/images/mongodb.png")} alt="mongodblogo" />MongoDB</td>
+                                                                <td><img className="skillSetImg" src={require("../../components/images/mysql.png")} alt="mysqllogo" />MySQL</td>
+                                                                <td><img className="skillSetImg" src={require("../../components/images/firebase.png")} alt="firebaselogo" />Google Firebase</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><img className="skillSetImg" src={require("../../components/images/node.png")} alt="nodelogo" />Node.js</td>
+                                                                <td><img className="skillSetImg" src={require("../../components/images/ajax.png")} alt="ajaxlogo" />AJAX</td>
+                                                                <td><img className="skillSetImg" src={require("../../components/images/html5.png")} alt="html5logo" />HTML5</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Axios</td>
+                                                                <td>Express</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="card">
+                                            <div className="card-header" id="headingThree">
+                                                <h5 className="mb-0">
+                                                    <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        Web Hosting / Version Control
+                                                </button>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                                <div className="card-body">
+                                                    <table className="table text-center">
+                                                        <thead className="collapse">
+                                                            <tr>
+                                                                <th scope="col"></th>
+                                                                <th scope="col"></th>
+                                                                {/* <th scope="col"></th> */}
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><img className="skillSetImg" src={require("../../components/images/heroku.png")} alt="herokulogo" />Heroku</td>
+                                                                <td><img className="skillSetImg" src={require("../../components/images/github.png")} alt="githublogo" />Git</td>
+                                                                {/* <td></td> */}
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* <table className="table text-center">
                                     <thead>
                                         <tr>
                                             <th scope="col">Front-End Technology</th>
@@ -199,14 +216,14 @@ const Home = () => (
 
                                     </tbody>
                                 </table> */}
-                            </Fade>
+                                </Fade>
+                            </div>
                         </div>
-                    </div>
-                </Col>
-            </Row>
-        </Container>
-    </Section>
-
+                    </Col>
+                </Row>
+            </Container>
+        </Section>
+    </div>
 );
 
 export default Home;

@@ -1,3 +1,13 @@
 nav {
     text-align: center;
 }
+
+#topBar {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    background: rgba(255,255,255,0.2);
+    /* box-shadow: 0 10px 20px rgba(50,50,50,.95); */
+}

@@ -24,4 +24,11 @@ th, td {
     width: 100%;
 }
 
+.jumbotron {
+    height: 100vh;
+}
 
+#aboutScroll {
+    background-image: url("../../components/images/memphis.png");
+   
+}
