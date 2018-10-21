@@ -4,21 +4,25 @@ import { Container, Row, Col, Section } from "../../components/Grid";
 // import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 // import Arrow from "../../components/Arrow";
+import Flip from "react-reveal/Flip";
 
 const Home = () => (
     <div>
-        <Section id="aboutScroll">
-            <Container fluid>
+        <Section id="aboutScroll"></Section>
+        <Section id="mumboJumbo">
+            <Container>
                 <Row>
                     <Col size="md-12">
-                        <div id="mumboJumbo">
-                            <div className="jumbotron border-0 bg-transparent text-center">
-                                <div className="container">
+
+                        <div className="jumbotron border-0 bg-transparent text-center">
+                            <div className="container">
+                                <Flip left cascade duration={1400}>
                                     <h1 className="display-4">Nicholas Chan</h1>
-                                    <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-                                </div>
+                                </Flip>
+                                <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
                             </div>
                         </div>
+
                     </Col>
                 </Row>
             </Container>
@@ -39,14 +43,16 @@ const Home = () => (
                         <div id="bioCard" className="card">
                             <div className="card-body">
                                 <h2>
-                                    <Fade down>
+                                    <Fade bottom>
                                         Hi there, I'm Nick.
                                 </Fade>
                                 </h2>
-                                <Fade down delay={500}>
-                                    I am a recent graduate from the UC Berkeley Coding Bootcamp.
-                                        My skillset is in full-stack development, but I have a great ineterest in UX/UI and general
-                                        front end web development. I am always trying to learn something new.
+                                <Fade top cascade delay={500}>
+                                    <p>
+                                        I am a recent graduate from the UC Berkeley Coding Bootcamp.
+                                        My skillset is in full-stack development, but I have a great interest in UX/UI and general
+                                        front end web development. I am always trying to learn something new!
+                                    </p>
                                 </Fade>
                                 <Fade delay={1200} cascade>
                                     <div id="accordion" className="w-100">

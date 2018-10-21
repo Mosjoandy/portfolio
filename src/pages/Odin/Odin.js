@@ -1,10 +1,22 @@
 import React from "react";
 import "./Odin.css";
-import { Container, Row, Col, Section } from "../../components/Grid";
+// import { Container, Row, Col, Section } from "../../components/Grid";
 import Fade from "react-reveal/Fade";
 // import Projects from "../Projects";
 
 class Odin extends React.Component {
+
+    toggle() {
+        var button = document.querySelector('.toggle');
+        var overlay = document.querySelector('.glass');
+        if (overlay.className === 'glass down') {
+            overlay.className = 'glass up';
+            button.innerText = '-';
+        } else {
+            overlay.className = 'glass down';
+            button.innerText = '+';
+        }
+    }
 
     render() {
 
@@ -48,8 +60,12 @@ class Odin extends React.Component {
                     <div className="card-body">
                         <h1 className="text-center">
                             <Fade top delay={2000}>
-                                <a href="https://odins-ravens.herokuapp.com/" target="_blank" rel="noopener noreferrer"><button className="playButton">Play Live</button></a>
-                                <a href="https://github.com/Mosjoandy/OdinsWorld" target="_blank" rel="noopener noreferrer"><img id="linksIcon" src={require("../../components/images/github.png")} alt="github icon" /></a>
+                                <a href="https://odins-ravens.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                    <button className="playButton">Play Live</button>
+                                </a>
+                                <a href="https://github.com/Mosjoandy/OdinsWorld" target="_blank" rel="noopener noreferrer">
+                                    <img id="linksIcon" src={require("../../components/images/github.png")} alt="github icon" />
+                                </a>
                             </Fade>
                         </h1>
                     </div>
