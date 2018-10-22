@@ -32,6 +32,9 @@ class Projects extends Component {
                         <h1 className="mx-auto text-center display-4">
                             <Fade bottom>
                                 Projects
+                                <Fade>
+                                    <hr />
+                                </Fade>
                             </Fade>
                         </h1>
                     </Row>

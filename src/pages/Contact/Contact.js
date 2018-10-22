@@ -3,6 +3,7 @@ import { Container, Row, Col, Section } from "../../components/Grid";
 import "./Contact.css";
 import firebase from "../../utils/firebase";
 import Fade from "react-reveal/Fade";
+import Footer from "../../components/Footer/Footer";
 
 class Contact extends Component {
 
@@ -43,69 +44,78 @@ class Contact extends Component {
 
     render() {
         return (
-            <Section id="contactScroll">
-                <Container>
-                    <Row>
-                        <Col size="md-3">
-                        </Col>
+            <div id="contactBG">
+                <Section id="contactScroll">
+                    <Container>
+                        <Row>
+                            <Col size="md-3">
+                            </Col>
 
-                        <Col size="md-6">
-                            {!this.state.submitted ? (
-                                <div id="contactCard">
-                                    <div className="card border-0 " id="middle">
-                                        <h1 className="display-4 text-center">
-                                            <Fade top>
-                                                Contact
-                                            </Fade>
-                                        </h1>
-                                        <div className="card-body">
-                                            <Fade top delay={800}>
-                                                <p>
-                                                    Please send me a message and your email!
-                                                </p>
-                                            </Fade>
-                                        </div>
-
-                                        <form onSubmit={this.handleSubmit}>
-                                            <Fade top cascade delay={1200}>
-                                                <div className="form-group">
-                                                    <label className="contactLabel">Name: </label>
-                                                    <input type="text" className="form-control mt-1 mb-3" name="name" onChange={this.handleChange} required />
-
-                                                    <label className="contactLabel">Email: </label>
-                                                    <input type="email" className="form-control mt-1 mb-3" name="email" onChange={this.handleChange} required />
-
-                                                    <label className="contactMessage">Message: </label>
-                                                    <textarea type="text" className="form-control mt-1 mb-3" rows="4" name="message" onChange={this.handleChange} required />
-                                                </div>
-                                                <Fade bottom delay={2000}>
-                                                    <button type="submit" className="btn submission" value="Submit">
-                                                        Send
-                                                    </button>
-                                                </Fade>
-                                            </Fade>
-                                        </form>
-                                    </div>
-                                </div>
-                            ) : (
+                            <Col size="md-6">
+                                {!this.state.submitted ? (
                                     <div id="contactCard">
-                                        <div className="card text-center border-0">
-
-                                            <h1>
-                                                <Fade bottom>
-                                                    Thanks! I'll be in contact with you soon, {this.state.name}
+                                        <div className="card border-0 bg-transparent " id="middle">
+                                            <h1 className="display-4 text-center">
+                                                <Fade top>
+                                                    Contact
+                                                    <Fade>
+                                                        <hr />
+                                                    </Fade>
                                                 </Fade>
                                             </h1>
+                                            <div className="card-body">
+                                                <Fade top delay={800}>
+                                                    <p>
+                                                        Please send me a message and your email!
+                                                </p>
+                                                </Fade>
+                                            </div>
+
+                                            <form onSubmit={this.handleSubmit}>
+                                                <Fade top cascade delay={1200}>
+                                                    <div className="form-group">
+                                                        <label className="contactLabel">Name: </label>
+                                                        <input type="text" className="form-control mt-1 mb-3" name="name" onChange={this.handleChange} required />
+
+                                                        <label className="contactLabel">Email: </label>
+                                                        <input type="email" className="form-control mt-1 mb-3" name="email" onChange={this.handleChange} required />
+
+                                                        <label className="contactMessage">Message: </label>
+                                                        <textarea type="text" className="form-control mt-1 mb-3" rows="4" name="message" onChange={this.handleChange} required />
+                                                    </div>
+                                                    <Fade bottom delay={2000}>
+                                                        <button type="submit" className="btn submission" value="Submit">
+                                                            Send
+                                                    </button>
+                                                    </Fade>
+                                                </Fade>
+                                            </form>
                                         </div>
                                     </div>
-                                )}
-                        </Col>
+                                ) : (
+                                        <div id="contactCard">
+                                            <div className="card text-center border-0">
 
-                        <Col size="md-3">
-                        </Col>
-                    </Row>
-                </Container>
-            </Section>
+                                                <h1>
+                                                    <Fade bottom>
+                                                        Thanks! I'll be in contact with you soon, {this.state.name}
+                                                    </Fade>
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    )}
+                                <div className="justify-content-center d-block text-center mt-5 text-white">
+                                    © 2018 Nicholas Chan
+                                    </div>
+                            </Col>
+
+                            <Col size="md-3">
+                            </Col>
+                        </Row>
+                        {/* <Footer /> */}
+                    </Container>
+                </Section>
+            </div>
         )
     }
 

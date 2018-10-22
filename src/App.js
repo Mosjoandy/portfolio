@@ -4,7 +4,7 @@ import './App.css';
 import Nav from './components/Nav';
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Projects from "./pages/Projects";
 import Social from "./components/Social/Social";
 import Fade from "react-reveal/Fade"
@@ -34,7 +34,7 @@ class App extends Component {
 
         <Projects />
         <Contact />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   };
