@@ -29,14 +29,16 @@ class Projects extends Component {
             <Section id="projectScroll">
                 <Container>
                     <Row>
-                        <h1 className="mx-auto text-center display-4">
-                            <Fade bottom>
-                                Projects
+                        <Col size="md-12">
+                            <h1 className="mx-auto text-center display-4">
+                                <Fade bottom>
+                                    Projects
                                 <Fade>
-                                    <hr />
+                                        <hr />
+                                    </Fade>
                                 </Fade>
-                            </Fade>
-                        </h1>
+                            </h1>
+                        </Col>
                     </Row>
                     <Row>
                         <Col size="md-12">

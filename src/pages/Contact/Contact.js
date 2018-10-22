@@ -47,14 +47,18 @@ class Contact extends Component {
             <div id="contactBG">
                 <Section id="contactScroll">
                     <Container>
-                        <h1 className="display-4 text-center">
-                            <Fade top>
-                                Contact
-                            <Fade>
-                                    <hr />
-                            </Fade>
-                            </Fade>
-                        </h1>
+                        <Row>
+                            <Col size="md-12">
+                                <h1 className="display-4 text-center">
+                                    <Fade top>
+                                        Contact
+                                    <Fade>
+                                        <hr />
+                                    </Fade>
+                                    </Fade>
+                                </h1>
+                            </Col>
+                        </Row>
                         <Row>
                             <Col size="md-3">
                             </Col>
@@ -62,52 +66,52 @@ class Contact extends Component {
                             <Col size="md-6">
                                 {
                                     !this.state.submitted ? (
-                                       
-                                            <div id="contactCard" className="card border-0">
-                                                <div className="card-body rounded text-center">
-                                                    <Fade top delay={800}>
-                                                        <p>
-                                                            Please send me a message and your email!
+
+                                        <div id="contactCard" className="card border-0">
+                                            <div className="card-body rounded text-center">
+                                                <Fade top delay={800}>
+                                                    <p>
+                                                        Please send me a message and your email!
                                                         </p>
-                                                    </Fade>
-                                                </div>
-                                                <div className="card-body rounded">
-                                                    <form onSubmit={this.handleSubmit}>
-                                                        <Fade top cascade delay={1200}>
-                                                            <div className="form-group">
-                                                                <label className="contactLabel">Name: </label>
-                                                                <input type="text" className="form-control mt-1 mb-3" name="name" onChange={this.handleChange} required />
-
-                                                                <label className="contactLabel">Email: </label>
-                                                                <input type="email" className="form-control mt-1 mb-3" name="email" onChange={this.handleChange} required />
-
-                                                                <label className="contactMessage">Message: </label>
-                                                                <textarea type="text" className="form-control mt-1 mb-3" rows="4" name="message" onChange={this.handleChange} required />
-                                                            </div>
-                                                            <Fade bottom delay={2000}>
-                                                                <button type="submit" className="btn submission" value="Submit">
-                                                                    Send
-                                                                </button>
-                                                            </Fade>
-                                                        </Fade>
-                                                    </form>
-                                                </div>
+                                                </Fade>
                                             </div>
-                                     
-                                    ) : (
-                                        
-                                                <div id="contactCard" className="card text-center border-0">
-                                                    {/* <div className="card text-center border-0"> */}
-                                                        <div className="card-body bigger">
-                                                            <h1 className="middle">
-                                                                <Fade bottom>
-                                                                    Thanks! I'll be in contact with you soon, {this.state.name}
-                                                                </Fade>
-                                                            </h1>
+                                            <div className="card-body rounded">
+                                                <form onSubmit={this.handleSubmit}>
+                                                    <Fade top cascade delay={1200}>
+                                                        <div className="form-group">
+                                                            <label className="contactLabel">Name: </label>
+                                                            <input type="text" className="form-control mt-1 mb-3" name="name" onChange={this.handleChange} required />
+
+                                                            <label className="contactLabel">Email: </label>
+                                                            <input type="email" className="form-control mt-1 mb-3" name="email" onChange={this.handleChange} required />
+
+                                                            <label className="contactMessage">Message: </label>
+                                                            <textarea type="text" className="form-control mt-1 mb-3" rows="4" name="message" onChange={this.handleChange} required />
                                                         </div>
-                                                    {/* </div> */}
+                                                        <Fade bottom delay={2000}>
+                                                            <button type="submit" className="btn submission" value="Submit">
+                                                                Send
+                                                                </button>
+                                                        </Fade>
+                                                    </Fade>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    ) : (
+
+                                            <div id="contactCard" className="card text-center border-0">
+                                                {/* <div className="card text-center border-0"> */}
+                                                <div className="card-body bigger">
+                                                    <h1 className="middle">
+                                                        <Fade bottom>
+                                                            Thanks! I'll be in contact with you soon, {this.state.name}
+                                                        </Fade>
+                                                    </h1>
                                                 </div>
-                                       
+                                                {/* </div> */}
+                                            </div>
+
                                         )
                                 }
                                 <div id="foot" className="rounded-top justify-content-center d-block text-center mt-4 pt-4 text-white">
