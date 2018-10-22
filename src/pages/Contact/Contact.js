@@ -52,14 +52,14 @@ class Contact extends Component {
                         <Col size="md-6">
                             {!this.state.submitted ? (
                                 <div id="contactCard">
-                                    <div className="card border-0" id="middle">
-                                        <h1 className="text-center">
-                                            <Fade bottom>
+                                    <div className="card border-0 " id="middle">
+                                        <h1 className="display-4 text-center">
+                                            <Fade top>
                                                 Contact
                                             </Fade>
                                         </h1>
                                         <div className="card-body">
-                                            <Fade bottom delay={800}>
+                                            <Fade top delay={800}>
                                                 <p>
                                                     Please send me a message and your email!
                                                 </p>
@@ -67,7 +67,7 @@ class Contact extends Component {
                                         </div>
 
                                         <form onSubmit={this.handleSubmit}>
-                                            <Fade bottom cascade delay={1200}>
+                                            <Fade top cascade delay={1200}>
                                                 <div className="form-group">
                                                     <label className="contactLabel">Name: </label>
                                                     <input type="text" className="form-control mt-1 mb-3" name="name" onChange={this.handleChange} required />

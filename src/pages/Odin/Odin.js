@@ -40,7 +40,7 @@ class Odin extends React.Component {
 
         return (
             <Fade>
-                <div id="odinCard" className="card">
+                <div id="odinCard" className="card mt-4">
                     <div className="card-body">
                         {
                             this.state.isHidden === false ?
@@ -80,7 +80,7 @@ class Odin extends React.Component {
                                                     version of Odin's Ravens online for free.
                                                 </p>
                                                 <h4 className="orTitle"><u>Role:</u></h4>
-                                                <p>UX/UI Design, Project Manager</p>
+                                                <p>UX/UI Design, Front-End Developer, Project Manager</p>
                                                 <h4 className="orTitle"><u>Timeframe:</u></h4>
                                                 <p>July 1 - July 11, 2018</p>
                                                 <h4 className="orTitle"><u>Technology:</u></h4>

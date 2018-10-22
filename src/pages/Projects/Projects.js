@@ -1,9 +1,11 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./Projects.css";
 import Odin from "../Odin";
 import Share from "../Share";
-// import Fade from "react-reveal/Fade";
+import Hotmess from "../Hotmess";
+import Burge from "../Burge";
+import Fade from "react-reveal/Fade";
 import { Container, Row, Col, Section } from "../../components/Grid";
 
 class Projects extends Component {
@@ -27,10 +29,21 @@ class Projects extends Component {
             <Section id="projectScroll">
                 <Container>
                     <Row>
+                        <h1 className="mx-auto text-center display-4">
+                            <Fade bottom>
+                                Projects
+                            </Fade>
+                        </h1>
+                    </Row>
+                    <Row>
                         <Col size="md-12">
                             <div className="card-deck">
                                 <Odin />
                                 <Share />
+                            </div>
+                            <div className="card-deck">
+                                <Burge />
+                                <Hotmess />
                             </div>
                         </Col>
                     </Row>

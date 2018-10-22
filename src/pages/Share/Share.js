@@ -9,7 +9,7 @@ class Share extends React.Component {
     render() {
 
         return (
-            <div className="card">
+            <div className="card mt-4">
                 <div id="shareBG"></div>
                 <div id="shareCard" className="card-body">
                     <Fade top>

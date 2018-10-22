@@ -1,0 +1,27 @@
+#burgeBG {
+    background:url("../../components/images/woodbg.jpg");
+    filter: opacity(0.5);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+#burgeTitle {
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+.burgeBody {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.burgeButton:hover {
+    background-color: gray;
+}
+
+.burgeButton:active {
+    background-color: white;
+}

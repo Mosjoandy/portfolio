@@ -1,0 +1,30 @@
+#hotmessBG {
+    background: #47ffcc;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+#hotmessTitle {
+    font-family: 'Special Elite', cursive;
+}
+
+.hotmessBody {
+    font-family: 'Anonymous Pro', monospace;
+}
+
+#hotmessBtn {
+    width: 15rem;
+    transition: all 0.5s ease;
+}
+#hotmessBtn:hover {
+    transform: scale(1.1)
+}
+
+
+@media only screen and (max-width: 600px) {
+    #hotmessBtn {
+        width: 10rem;
+    }
+}
