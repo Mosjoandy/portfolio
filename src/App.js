@@ -3,13 +3,11 @@ import './App.css';
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from './components/Nav';
 import Home from "./pages/Home";
-// import Odin from "./pages/Odin";
 import Contact from "./pages/Contact";
-// import Share from "./pages/Share";
 import Footer from "./components/Footer";
 import Projects from "./pages/Projects";
-// import Fade from "react-reveal/Fade";
 import Social from "./components/Social/Social";
+// import Headroom from 'react-headroom';
 
 class App extends Component {
 
@@ -30,7 +28,9 @@ class App extends Component {
 
       // </Router>
       <div>
-        <Nav />
+        {/* <Headroom> */}
+          <Nav />
+        {/* </Headroom> */}
         <Social />
         <Home />
 

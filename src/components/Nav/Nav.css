@@ -3,11 +3,28 @@ nav {
 }
 
 #topBar {
+    width: 20%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.4);
+    /* box-shadow: 0 10px 20px rgba(50,50,50,.95); */
+}
+
+
+.nav-item:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+#upperBar {
     width: 100%;
-    max-width: 100%;
     position: absolute;
+    color: white;
     top: 0;
     z-index: 999;
-    background: rgba(255,255,255,0.2);
-    /* box-shadow: 0 10px 20px rgba(50,50,50,.95); */
+    /* background: rgba(255,255,255,0.4); */
+}
+
+@media only screen and (max-width: 600px) {
+    #topBar {
+        width: 100%;
+    }
 }
