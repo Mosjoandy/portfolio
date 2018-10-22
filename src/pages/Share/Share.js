@@ -32,24 +32,24 @@ class Share extends React.Component {
                                     Members can create an account, sign-in, create new listings, and view listings
                                     that are available based on a designated geolocation.
                                 </p>
+                                <h4><u>Role:</u></h4>
+                                <p>Full-Stack Developer</p>
+                                <h4><u>Timeframe:</u></h4>
+                                <p>June 8 - June 14, 2018</p>
+                                <h4><u>Technology:</u></h4>
+                                <p>
+                                    <img className="skillSetImg" src={require("../../components/images/handlebars.png")} alt="handlebarslogo" />Handlebars.js,&nbsp;
+                                    <img className="skillSetImg" src={require("../../components/images/mysql.png")} alt="mysqllogo" />MySQL,&nbsp;
+                                    <img className="skillSetImg" src={require("../../components/images/html5.png")} alt="html5logo" />HTML5,&nbsp;
+                                    <img className="skillSetImg" src={require("../../components/images/css3.png")} alt="css3logo" />CSS3,&nbsp;
+                                    <img className="skillSetImg" src={require("../../components/images/jquery.png")} alt="jquerylogo" />jQuery,&nbsp;
+                                        Express,&nbsp;
+                                    <img className="skillSetImg" src={require("../../components/images/bootstrap.png")} alt="bootstraplogo" />Bootstrap
+                                </p>
                             </div>
                         </Fade>
 
                     </div>
-                    <Fade top cascade>
-                        <div className="card-body orBody">
-                            <p>
-                                <img className="skillSetImg" src={require("../../components/images/handlebars.png")} alt="handlebarslogo" />Handlebars.js,&nbsp;
-                                <img className="skillSetImg" src={require("../../components/images/mysql.png")} alt="mysqllogo" />MySQL,&nbsp;
-                                <img className="skillSetImg" src={require("../../components/images/html5.png")} alt="html5logo" />HTML5,&nbsp;
-                                <img className="skillSetImg" src={require("../../components/images/css3.png")} alt="css3logo" />CSS3,&nbsp;
-                                <img className="skillSetImg" src={require("../../components/images/jquery.png")} alt="jquerylogo" />jQuery,&nbsp;
-                                Express,&nbsp;
-                                <img className="skillSetImg" src={require("../../components/images/bootstrap.png")} alt="bootstraplogo" />Bootstrap
-
-                                </p>
-                        </div>
-                    </Fade>
                     <div className="card-body">
                         <h1 className="text-center">
                             <Fade top delay={1000}>

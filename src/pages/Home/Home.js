@@ -8,7 +8,7 @@ import Flip from "react-reveal/Flip";
 
 const Home = () => (
     <div>
-        <Section id="aboutScroll"></Section>
+        <Section id="aboutBG"></Section>
         <Section id="mumboJumbo">
             <Container>
                 <Row>
@@ -20,7 +20,7 @@ const Home = () => (
                                     <h1 className="display-4">Nicholas Chan</h1>
                                 </Flip>
                                 <Flip right cascade duration={1400} delay={1000}>
-                                    <h3 className="email">nicholashchan@gmail.com</h3>
+                                    <h3 className="quote">Web Developer, at your service.</h3>
                                 </Flip>
                             </div>
                         </div>
@@ -30,33 +30,57 @@ const Home = () => (
             </Container>
         </Section>
 
-        <Section>
+        {/* <Section id="aboutMe">
+            <Section id="aboutScroll"></Section>
             <Container>
                 <Row>
-                    {/* <Col size="md-12">
-                        <Fade duration={2500}>
-                            <div>
-                                <img className="rounded" id="profilePic" src={require("../../components/images/profilepic.jpg")} alt="face" />
-                            </div>
-                        </Fade>
-                    </Col> */}
+                    <Col size="md-3"></Col>
+                    <Col size="md-6">
 
-                    <Col size="md-12">
                         <div id="bioCard" className="card">
+                            <Fade>
+                                <h1 className="text-center">
+                                    About
+                                </h1>
+                            </Fade>
                             <div className="card-body">
-                                <h2>
-                                    <Fade bottom>
-                                        Hi there, I'm Nick.
-                                </Fade>
-                                </h2>
-                                <Fade top cascade delay={500}>
+                                <div className="card-body">
                                     <p>
-                                        I am a recent graduate from the UC Berkeley Coding Bootcamp.
-                                        My skillset is in full-stack development, but I have a great interest in UX/UI and general
-                                        front end web development. I am always trying to learn something new!
+                                        I am a recent graduate from the UC Berkeley Coding Bootcamp pursuing my dream in technology.
                                     </p>
-                                </Fade>
-                                <Fade delay={1200} cascade>
+                                    <p>
+                                        My first career was in healthcare, where I provided a positive, energetic environment
+                                        for patients with acute mental illnesses. My passion for technology grew as I spent more
+                                        time working on the computer using healthcare databases and electronic medical record-keeping.
+                                        I decided to make the leap into the technology industry.
+                                    </p>
+                                    <p>
+                                        I enjoy turning a person's vision and idea into reality through a dynamic and interactive website.
+                                        Just as in healthcare, I love working with teams to overcome challenges. I believe strongly in
+                                        camaraderie with my peers and strive to build lasting relationships.
+                                    </p>
+                                    <p>
+                                        Below are some of the projects I have worked on. Some are from bootcamp, while others are for
+                                        customers. Please do visit the live links!
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </Col>
+                    <Col size="md-3"></Col>
+                </Row>
+            </Container>
+        </Section> */}
+    </div>
+);
+
+export default Home;
+
+
+{/* TABLES AND STUFF
+
+                                    <Fade delay={1200} cascade>
                                     <div id="accordion" className="w-100">
 
                                         <div className="card w-100">
@@ -151,14 +175,14 @@ const Home = () => (
                                                             <tr>
                                                                 <th scope="col"></th>
                                                                 <th scope="col"></th>
-                                                                {/* <th scope="col"></th> */}
+                                                              
                                                             </tr>
                                                         </thead>
                                                         <tbody>
                                                             <tr>
                                                                 <td><img className="skillSetImg" src={require("../../components/images/heroku.png")} alt="herokulogo" />Heroku</td>
                                                                 <td><img className="skillSetImg" src={require("../../components/images/github.png")} alt="githublogo" />Git</td>
-                                                                {/* <td></td> */}
+                                                        
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -166,8 +190,9 @@ const Home = () => (
                                             </div>
                                         </div>
                                     </div>
+                                    </Fade> */}
 
-                                    {/* <table className="table text-center">
+{/* <table className="table text-center">
                                     <thead>
                                         <tr>
                                             <th scope="col">Front-End Technology</th>
@@ -224,14 +249,3 @@ const Home = () => (
 
                                     </tbody>
                                 </table> */}
-                                </Fade>
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-        </Section>
-    </div>
-);
-
-export default Home;

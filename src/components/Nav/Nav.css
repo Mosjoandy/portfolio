@@ -4,8 +4,10 @@ nav {
 
 #topBar {
     width: 20%;
-    margin: 0 auto;
     background: rgba(255,255,255,0.4);
+    position: absolute;
+    top: 0;
+    right: 10rem;
     /* box-shadow: 0 10px 20px rgba(50,50,50,.95); */
 }
 
@@ -18,7 +20,7 @@ nav {
     width: 100%;
     position: absolute;
     color: white;
-    top: 0;
+    /* top: 0; */
     z-index: 999;
     /* background: rgba(255,255,255,0.4); */
 }
@@ -26,5 +28,9 @@ nav {
 @media only screen and (max-width: 600px) {
     #topBar {
         width: 100%;
+        margin: 0 auto;
+        right: unset;
+
     }
+
 }

@@ -79,7 +79,7 @@ class Contact extends Component {
                                                     <textarea type="text" className="form-control mt-1 mb-3" rows="4" name="message" onChange={this.handleChange} required />
                                                 </div>
                                                 <Fade bottom delay={2000}>
-                                                    <button type="submit" className="btn" value="Submit">
+                                                    <button type="submit" className="btn submission" value="Submit">
                                                         Send
                                                     </button>
                                                 </Fade>

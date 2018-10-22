@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Projects from "./pages/Projects";
 import Social from "./components/Social/Social";
-// import Headroom from 'react-headroom';
+import Fade from "react-reveal/Fade"
 
 class App extends Component {
 
@@ -28,9 +28,7 @@ class App extends Component {
 
       // </Router>
       <div>
-        {/* <Headroom> */}
-          <Nav />
-        {/* </Headroom> */}
+        <Nav />
         <Social />
         <Home />
 

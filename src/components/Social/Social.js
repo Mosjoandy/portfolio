@@ -20,6 +20,11 @@ class Social extends Component {
                         <img id="socialIco" src={require("../images/linkedin.png")} alt="linkedin nicholas chan" />
                     </a>
                 </div>
+                <div>
+                    <a rel="noopener noreferrer" href="mailto:nicholashchan@gmail.com" target="_blank">
+                        <img id="socialIco" src={require("../images/email.png")} alt="email nicholas chan" />
+                    </a>
+                </div>
             </div>
         );
     };

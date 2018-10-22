@@ -60,9 +60,9 @@ class Odin extends React.Component {
 
 
 
-                                    <Fade  top>
+                                    <Fade top>
                                         <h1 className="text-center orTitle">Odin's Ravens</h1>
-                                        <hr /> 
+                                        <hr />
                                     </Fade>
                                     <div className="card-body orBody">
                                         <Fade cascade top duration={1200}>
@@ -79,20 +79,26 @@ class Odin extends React.Component {
                                                     With working lobby chat and multiple game lobbies, players can play our
                                                     version of Odin's Ravens online for free.
                                                 </p>
+                                                <h4 className="orTitle"><u>Role:</u></h4>
+                                                <p>UX/UI Design, Project Manager</p>
+                                                <h4 className="orTitle"><u>Timeframe:</u></h4>
+                                                <p>July 1 - July 11, 2018</p>
+                                                <h4 className="orTitle"><u>Technology:</u></h4>
+                                                <p>
+                                                    <img className="skillSetImg" src={require("../../components/images/reactjs.svg")} alt="reactlogo" />React.js,&nbsp;
+                                                    <img className="skillSetImg" src={require("../../components/images/firebase.png")} alt="firebaselogo" />Google Firebase,&nbsp;
+                                                    <img className="skillSetImg" src={require("../../components/images/html5.png")} alt="html5logo" />HTML5,&nbsp;
+                                                    <img className="skillSetImg" src={require("../../components/images/css3.png")} alt="css3logo" />CSS3,&nbsp;
+                                                    <img className="skillSetImg" src={require("../../components/images/bootstrap.png")} alt="bootstraplogo" />Bootstrap
+                                                </p>
                                             </div>
                                         </Fade>
                                     </div>
-                                    <Fade top cascade >
+                                    {/* <Fade top cascade >
                                         <div className="card-body orBody">
-                                            <p>
-                                                <img className="skillSetImg" src={require("../../components/images/reactjs.svg")} alt="reactlogo" />React.js,&nbsp;
-                                                <img className="skillSetImg" src={require("../../components/images/firebase.png")} alt="firebaselogo" />Google Firebase,&nbsp;
-                                                <img className="skillSetImg" src={require("../../components/images/html5.png")} alt="html5logo" />HTML5,&nbsp;
-                                                <img className="skillSetImg" src={require("../../components/images/css3.png")} alt="css3logo" />CSS3,&nbsp;
-                                                <img className="skillSetImg" src={require("../../components/images/bootstrap.png")} alt="bootstraplogo" />Bootstrap
-                                            </p>
+                                           
                                         </div>
-                                    </Fade>
+                                    </Fade> */}
                                     <div className="card-body">
                                         <h1 className="text-center">
                                             <Fade top delay={1000}>

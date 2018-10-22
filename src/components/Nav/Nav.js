@@ -1,23 +1,26 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 import "./Nav.css";
+import Fade from "react-reveal/Fade";
 
 const Nav = () => (
-  <div id="upperBar">
-    <nav id="topBar" className="navbar navbar-transparent rounded-bottom">
-      <ul className="nav justify-content-center mx-auto">
-        <li className="nav-item rounded">
-          <a className="text-white btn" type="btn" role="button" href="#aboutScroll">About</a>
-        </li>
-        <li className="nav-item rounded">
-          <a className="text-white btn" type="btn" role="button" href="#projectScroll">Projects</a>
-        </li>
-        <li className="nav-item rounded">
-          <a className="text-white btn" type="btn" role="button" href="#contactScroll">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <Fade top>
+    <div id="upperBar">
+      <nav id="topBar" className="navbar navbar-transparent rounded-bottom">
+        <ul className="nav justify-content-center mx-auto">
+          <li className="nav-item rounded">
+            <a className="text-white btn" type="btn" role="button" href="#projectScroll">Projects</a>
+          </li>
+          <li className="nav-item rounded">
+            <a className="text-white btn" type="btn" role="button" href="#contactScroll">Contact</a>
+          </li>
+          <li className="nav-item rounded">
+            <a className="text-white btn" type="btn" role="button" href="Resume.pdf" download="Nicholas Chan Resume.pdf">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </Fade>
   // <nav className="navbar navbar-expand-lg navbar-light">
   //   {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
   //     <span className="navbar-toggler-icon"></span>
