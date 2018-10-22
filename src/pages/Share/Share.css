@@ -1,11 +1,14 @@
 #shareProject {
     background-image: url("../../components/images/bbq1-sm.jpg");
+ 
 }
 
 #shareCard {
-    background-image: url("../../components/images/bbq2-sm.jpg");
+    /* background-image: url("../../components/images/bbq2-sm.jpg"); */
     word-wrap: normal;
 
+    text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.7);
+    z-index: 1;
 }
 
 #shareCardPic {
@@ -27,4 +30,16 @@
 .shareButton {
     padding: 1rem 2rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.404);
+}
+
+#shareBG {
+    background-image: url("../../components/images/bbq2-sm.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: opacity(0.5);
+    -webkit-filter: opacity(0.5);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
 }

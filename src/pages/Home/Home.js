@@ -19,7 +19,9 @@ const Home = () => (
                                 <Flip left cascade duration={1400}>
                                     <h1 className="display-4">Nicholas Chan</h1>
                                 </Flip>
-                                <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                                <Flip right cascade duration={1400} delay={1000}>
+                                    <h3>nicholashchan@gmail.com</h3>
+                                </Flip>
                             </div>
                         </div>
 
@@ -31,15 +33,15 @@ const Home = () => (
         <Section>
             <Container>
                 <Row>
-                    <Col size="md-5">
+                    <Col size="md-12">
                         <Fade duration={2500}>
                             <div>
-                                <img className="rounded-circle" id="profilePic" src={require("../../components/images/profilepic.jpg")} alt="face" />
+                                <img className="rounded" id="profilePic" src={require("../../components/images/profilepic.jpg")} alt="face" />
                             </div>
                         </Fade>
                     </Col>
 
-                    <Col size="md-7">
+                    <Col size="md-12">
                         <div id="bioCard" className="card">
                             <div className="card-body">
                                 <h2>

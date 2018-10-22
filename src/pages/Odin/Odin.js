@@ -60,11 +60,12 @@ class Odin extends React.Component {
 
 
 
-                                    <Fade delay={1800} top>
+                                    <Fade  top>
                                         <h1 className="text-center orTitle">Odin's Ravens</h1>
+                                        <hr /> 
                                     </Fade>
                                     <div className="card-body orBody">
-                                        <Fade delay={2000} cascade top duration={1200}>
+                                        <Fade cascade top duration={1200}>
                                             <div>
                                                 <p>
                                                     Odin's Ravens is a digitized version of the card game from Osprey Games.
@@ -81,7 +82,7 @@ class Odin extends React.Component {
                                             </div>
                                         </Fade>
                                     </div>
-                                    <Fade top cascade delay={3000}>
+                                    <Fade top cascade >
                                         <div className="card-body orBody">
                                             <p>
                                                 <img className="skillSetImg" src={require("../../components/images/reactjs.svg")} alt="reactlogo" />React.js,&nbsp;
@@ -94,7 +95,7 @@ class Odin extends React.Component {
                                     </Fade>
                                     <div className="card-body">
                                         <h1 className="text-center">
-                                            <Fade top delay={3000}>
+                                            <Fade top delay={1000}>
                                                 <a href="https://odins-ravens.herokuapp.com/" target="_blank" rel="noopener noreferrer"><button className="playButton">Play Live</button></a>
                                                 <a href="https://github.com/Mosjoandy/OdinsWorld" target="_blank" rel="noopener noreferrer"><img id="linksIcon" src={require("../../components/images/github.png")} alt="github icon" /></a>
                                             </Fade>
