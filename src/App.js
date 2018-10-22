@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Projects from "./pages/Projects";
 // import Fade from "react-reveal/Fade";
+import Social from "./components/Social/Social";
 
 class App extends Component {
 
@@ -30,6 +31,7 @@ class App extends Component {
       // </Router>
       <div>
         <Nav />
+        <Social />
         <Home />
 
         <Projects />

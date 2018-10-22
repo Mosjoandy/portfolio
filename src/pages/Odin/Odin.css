@@ -1,5 +1,6 @@
 #odinProject {
     background-image: url(../../components/images/paper.jpg);
+    transition: transform 1s ease;
 }
 
 #odinCard {
@@ -23,7 +24,7 @@
     transition: transform 0.5s;
 }
 #linksIcon:hover {
-    transform: scale(1.25);
+    transform: scale(1.15);
     
 }
 
@@ -31,8 +32,10 @@
     width: 100%;
 }
 
-.lokiPic, .cardPic2 {  
+.lokiPic {  
     width: 100%;
+    bottom: 0;
+    z-index: 0;
 }
 
 .playButton {
@@ -52,7 +55,6 @@
 	text-shadow: 0px 1px 0px #ccc2a6;
 	box-shadow: 0px 15px 10px -10px rgba(0,0,0,0.5);
     transition: all 0.2s ease-in-out;
-    text-decoration: none;
 }
 
 .playButton:hover {
@@ -67,3 +69,33 @@
         width: 15rem;
     }
 } */
+
+.show {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hidden {
+    transform: translateY(-100%);
+    position: absolute;
+}
+
+#toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem 0;
+	font-family: 'Caudex', serif;
+	background:linear-gradient(to bottom, #e9ad58 5%, #8a550b 100%);
+	border-radius: 0.3rem;
+	border: 2px solid #1c1b18d6;
+	display: inline-block;
+	cursor: pointer;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #ccc2a6;
+	box-shadow: 0px 15px 10px -10px rgba(0,0,0,0.5);
+    transition: all 0.2s ease-in-out;
+    z-index: 3;
+}

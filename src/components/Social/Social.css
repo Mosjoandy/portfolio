@@ -1,0 +1,27 @@
+#socialBar {
+    position: fixed;
+    left: 0;
+    top: 25vh;
+    z-index: 9999;
+}
+
+#socialIco {
+    width: 3rem;
+    margin: 2px;
+    transition: transform .5s ease;
+}
+
+#socialIco:hover {
+    transform: translateX(10px);
+}
+
+@media only screen and (max-width: 600px) {
+    #socialIco {
+        width: 1.5rem;
+        margin: 1px;
+    }
+
+    #socialBar {
+        z-index: 9999;
+    }
+}
