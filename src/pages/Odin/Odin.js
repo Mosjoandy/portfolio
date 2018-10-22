@@ -1,7 +1,7 @@
 import React from "react";
 import "./Odin.css";
 // import { Container, Row, Col, Section } from "../../components/Grid";
-import Slide from "react-reveal/Slide";
+// import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
 
 class Odin extends React.Component {

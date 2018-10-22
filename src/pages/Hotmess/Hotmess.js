@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hotmess.css";
-import { Container, Row, Col, Section } from "../../components/Grid";
+// import { Container, Row, Col, Section } from "../../components/Grid";
 import Fade from "react-reveal/Fade";
 // import Projects from "../Projects";
 
