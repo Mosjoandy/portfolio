@@ -32,7 +32,7 @@ class Projects extends Component {
                         <Col size="md-12">
                             <h1 className="mx-auto text-center display-4">
                                 <Fade bottom>
-                                    Projects
+                                    Work
                                 <Fade>
                                         <hr />
                                     </Fade>

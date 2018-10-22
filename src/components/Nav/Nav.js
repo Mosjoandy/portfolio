@@ -9,7 +9,7 @@ const Nav = () => (
       <nav id="topBar" className="navbar navbar-transparent rounded-bottom">
         <ul className="nav justify-content-center mx-auto">
           <li className="nav-item rounded">
-            <a className="text-white btn" type="btn" role="button" href="#projectScroll">Projects</a>
+            <a className="text-white btn" type="btn" role="button" href="#projectScroll">Work</a>
           </li>
           <li className="nav-item rounded">
             <a className="text-white btn" type="btn" role="button" href="#contactScroll">Contact</a>
