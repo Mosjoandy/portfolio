@@ -22,7 +22,7 @@ class Hotmess extends React.Component {
                             <div>
                                 <p>
                                     Auntie Hotmess is a single page React Application providing information on products,
-                                    events, and information. 
+                                    and events.
                                 </p>
                                 <p>
                                     Face-to-face customer satisfaction from conceptualization to deployment, with weekly updates

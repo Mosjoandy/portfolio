@@ -20,6 +20,14 @@ th, td {
     border-collapse: collapse;
 }
 
+#downsies {
+    width: 3rem;
+    position: absolute;
+    bottom: 1rem;
+    margin: 0 auto;
+    
+}
+
 #profilePic {
     margin: 5vh 0;
     width: 50%;

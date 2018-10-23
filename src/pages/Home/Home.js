@@ -8,7 +8,13 @@ import Flip from "react-reveal/Flip";
 
 const Home = () => (
     <div>
-        <Section id="aboutBG"></Section>
+        <Section id="aboutBG">
+            <div className="text-center">
+                <a href="#projectScroll">
+                    <img id="downsies" src={require("../../components/images/scrollDown.gif")} alt="scrolly" />
+                </a>
+            </div>
+        </Section>
         <Section id="mumboJumbo">
             <Container>
                 <Row>
@@ -27,7 +33,9 @@ const Home = () => (
 
                     </Col>
                 </Row>
+
             </Container>
+
         </Section>
 
         {/* <Section id="aboutMe">

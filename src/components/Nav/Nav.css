@@ -25,12 +25,29 @@ nav {
     /* background: rgba(255,255,255,0.4); */
 }
 
+
+@media only screen and (max-width: 1344px) {
+    #topBar {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+    #topBar {
+        width: 100%;
+        margin: 0 auto;
+        right: unset;
+    }
+
+}
+
 @media only screen and (max-width: 600px) {
     #topBar {
         width: 100%;
         margin: 0 auto;
         right: unset;
-
     }
 
 }
