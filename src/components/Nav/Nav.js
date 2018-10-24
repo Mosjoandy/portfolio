@@ -15,7 +15,7 @@ const Nav = () => (
             <a className="text-white btn" type="btn" role="button" href="#contactScroll">Contact</a>
           </li>
           <li className="nav-item rounded">
-            <a className="text-white btn" type="btn" role="button" target="_blank" href="Resume.pdf">Resume</a>
+            <a className="text-white btn" type="btn" role="button" rel="noopener noreferrer" target="_blank" href="https://docs.google.com/document/d/11fK0ZcaJYBDkE-9aRKt1BROZuGVu0nm-Qbmm4G4g4lo/edit?usp=sharing">Resume</a>
           </li>
         </ul>
       </nav>
