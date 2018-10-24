@@ -63,7 +63,7 @@ class Contact extends Component {
                                                 className="btn bg-transparent"
                                                 download="Nicholas Chan Resume"
                                                 href="Resume.pdf">
-                                                <h1>Download Resume</h1>
+                                                <h2>Download Resume</h2>
                                             </a>
                                         </div>
                                     </Fade>
