@@ -53,8 +53,19 @@ class Contact extends Component {
                                     <Fade top>
                                         Contact
                                     <Fade>
-                                        <hr />
+                                            <hr />
+                                        </Fade>
+
                                     </Fade>
+                                    <Fade duration={1400} delay={1400}>
+                                        <div className="rounded">
+                                            <a
+                                                className="btn bg-transparent"
+                                                download="Nicholas Chan Resume"
+                                                href="Resume.pdf">
+                                                <h1>Download Resume</h1>
+                                            </a>
+                                        </div>
                                     </Fade>
                                 </h1>
                             </Col>

@@ -28,11 +28,6 @@ const Home = () => (
                                 <Flip right cascade duration={1400} delay={1000}>
                                     <h3 className="quote">Web Developer, at your service.</h3>
                                 </Flip>
-                                <Flip right cascade duration={1400} delay={1400}>
-                                    <div>
-                                        <button type="button" className="btn btn-success">Download Resume</button>
-                                    </div>
-                                </Flip>
                             </div>
                         </div>
 
