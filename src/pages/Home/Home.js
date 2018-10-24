@@ -11,9 +11,8 @@ const Home = () => (
         <Section id="aboutBG">
 
             <a href="#projectScroll" className="text-center">
-                <img id="downsies" src={require("../../components/images/scrollDown.gif")} alt="scrolly" />
+                <img id="downsies" src={require("../../components/images/scrollDown.gif")} alt="scrolly down" />
             </a>
-
         </Section>
         <Section id="mumboJumbo">
             <Container>
