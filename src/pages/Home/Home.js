@@ -9,11 +9,11 @@ import Flip from "react-reveal/Flip";
 const Home = () => (
     <div>
         <Section id="aboutBG">
-            <div className="text-center">
-                <a href="#projectScroll">
-                    <img id="downsies" src={require("../../components/images/scrollDown.gif")} alt="scrolly" />
-                </a>
-            </div>
+
+            <a href="#projectScroll" className="text-center">
+                <img id="downsies" src={require("../../components/images/scrollDown.gif")} alt="scrolly" />
+            </a>
+
         </Section>
         <Section id="mumboJumbo">
             <Container>
@@ -27,6 +27,11 @@ const Home = () => (
                                 </Flip>
                                 <Flip right cascade duration={1400} delay={1000}>
                                     <h3 className="quote">Web Developer, at your service.</h3>
+                                </Flip>
+                                <Flip right cascade duration={1400} delay={1400}>
+                                    <div>
+                                        <button type="button" className="btn btn-success">Download Resume</button>
+                                    </div>
                                 </Flip>
                             </div>
                         </div>

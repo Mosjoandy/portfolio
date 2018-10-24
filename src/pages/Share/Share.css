@@ -28,8 +28,9 @@
 }
 
 .shareButton {
-    padding: 1rem 2rem;
-    margin-bottom: 1rem;
+    margin-right: 1rem;
+    height: 4rem;
+    width: 10rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.404);
 }
 

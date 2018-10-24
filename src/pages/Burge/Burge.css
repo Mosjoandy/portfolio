@@ -18,10 +18,21 @@
     font-weight: bold;
 }
 
-.burgeButton:hover {
-    background-color: gray;
+.burgeButton {
+    width: 10rem;
+    height: 4rem;
+    margin-right: 1rem;
+    background-color: darkgray;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-weight: bolder;
 }
 
+.burgeButton:hover {
+    background-color: gray;
+    color: white;
+}
+/* 
 .burgeButton:active {
     background-color: white;
-}
+
+} */

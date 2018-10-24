@@ -21,11 +21,12 @@ th, td {
 }
 
 #downsies {
-    width: 3rem;
     position: absolute;
+    width: 3rem;
     bottom: 1rem;
-    margin: 0 auto;
-    
+    left: 0;
+    right: 0;
+    margin: 0 auto;  
 }
 
 #profilePic {

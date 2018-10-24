@@ -19,7 +19,7 @@ class Share extends React.Component {
                     <div className="card-body orBody">
 
                         <Fade cascade top duration={1200}>
-                            <div>
+                            <div id="cardInfo">
                                 <p>
                                     ShareBnB is an AirBnB clone that allows members to share parts of their home,
                                     yard or property with others.
@@ -50,11 +50,11 @@ class Share extends React.Component {
                         </Fade>
 
                     </div>
-                    <div className="card-body">
+                    <div className="card-body bottomsUp">
                         <h1 className="text-center">
                             <Fade top delay={1000}>
                                 <a href="https://mysterious-cliffs-66031.herokuapp.com/" target="_blank" rel="noopener noreferrer"><button className="shareButton btn btn-success">Live Website</button></a>
-                                <a href="https://github.com/Mosjoandy/ShareBnb" target="_blank" rel="noopener noreferrer"><img id="linksIcon" src={require("../../components/images/github.png")} alt="github icon" /></a>
+                                <a href="https://github.com/Mosjoandy/ShareBnb" target="_blank" rel="noopener noreferrer"><img id="linksIcon" src={require("../../components/images/git.png")} alt="github icon" /></a>
                             </Fade>
                         </h1>
                     </div>

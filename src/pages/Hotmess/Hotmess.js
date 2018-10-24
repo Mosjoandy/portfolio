@@ -19,7 +19,7 @@ class Hotmess extends React.Component {
                     <div className="card-body hotmessBody">
 
                         <Fade cascade top duration={1200}>
-                            <div>
+                            <div id="cardInfo">
                                 <p>
                                     Auntie Hotmess is a single page React Application providing information on products,
                                     and events.
@@ -47,11 +47,11 @@ class Hotmess extends React.Component {
                             </div>
                         </Fade>
                     </div>
-                    <div className="card-body">
+                    <div className="card-body bottomsUp">
                         <h1 className="text-center">
                             <Fade top delay={1000}>
                                 <a href="https://www.auntiehotmess.com" target="_blank" rel="noopener noreferrer"><img src={require("../../components/images/hotmessBtn.png")} alt="hotmess button" id="hotmessBtn"/></a>
-                                <a href="https://github.com/Mosjoandy/auntiehotmess" target="_blank" rel="noopener noreferrer"><img id="linksIcon" src={require("../../components/images/github.png")} alt="github icon" /></a>
+                                <a href="https://github.com/Mosjoandy/auntiehotmess" target="_blank" rel="noopener noreferrer"><img id="linksIcon" src={require("../../components/images/git.png")} alt="github icon" /></a>
                             </Fade>
                         </h1>
                     </div>

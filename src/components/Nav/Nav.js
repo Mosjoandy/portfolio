@@ -4,7 +4,7 @@ import "./Nav.css";
 import Fade from "react-reveal/Fade";
 
 const Nav = () => (
-  <Fade top>
+  // <Fade top>
     <div id="upperBar">
       <nav id="topBar" className="navbar navbar-transparent rounded-bottom">
         <ul className="nav justify-content-center mx-auto">
@@ -20,7 +20,7 @@ const Nav = () => (
         </ul>
       </nav>
     </div>
-  </Fade>
+  // </Fade>
   // <nav className="navbar navbar-expand-lg navbar-light">
   //   {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
   //     <span className="navbar-toggler-icon"></span>

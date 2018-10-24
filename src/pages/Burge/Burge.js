@@ -19,7 +19,7 @@ class Burge extends React.Component {
                     <div className="card-body burgeBody">
 
                         <Fade cascade top duration={1200}>
-                            <div>
+                            <div id="cardInfo">
                                 <p>
                                    The Burge Road Farm is a multi-page react website connected to a Google Firebase database that 
                                    includes an admin panel for mass email purposes. Authentication utilizes Google Firebase Auth.
@@ -29,15 +29,15 @@ class Burge extends React.Component {
                                     The owner reached out privately after viewing the publication of my other work.
                                 </p>
                                 <p>
-                                    Website viewers can navigate the entire website be notified when the season for U-Pick Cherries 
+                                    Website viewers can navigate the entire website and be notified when the season for U-Pick Cherries 
                                     is coming up. Included is a control panel that the owner can remove and copy email addresses to 
                                     conduct mass emailing.
                                 </p>
-                                <h4 id="burgeTitle"><u>Role:</u></h4>
+                                <h4 id="burgeTitle"><u><b>Role:</b></u></h4>
                                 <p>Full-Stack Developer</p>
-                                <h4 id="burgeTitle"><u>Timeframe:</u></h4>
+                                <h4 id="burgeTitle"><u><b>Timeframe:</b></u></h4>
                                 <p>September 19, 2018 - Present</p>
-                                <h4 id="burgeTitle"><u>Technology:</u></h4>
+                                <h4 id="burgeTitle"><u><b>Technology:</b></u></h4>
                                 <p>
                                     <img className="skillSetImg" src={require("../../components/images/reactjs.svg")} alt="reactlogo" />React.js,&nbsp;
                                     <img className="skillSetImg" src={require("../../components/images/firebase.png")} alt="firebaselogo" />Google Firebase,&nbsp;
@@ -48,11 +48,11 @@ class Burge extends React.Component {
                             </div>
                         </Fade>
                     </div>
-                    <div className="card-body">
+                    <div className="card-body bottomsUp">
                         <h1 className="text-center">
                             <Fade top delay={1000}>
                                 <a href="https://brfsite-fabb7.firebaseapp.com/" target="_blank" rel="noopener noreferrer"><button className="btn burgeButton">Live Website</button></a>
-                                <a href="https://github.com/Mosjoandy/burgeroadfarm" target="_blank" rel="noopener noreferrer"><img id="linksIcon" src={require("../../components/images/github.png")} alt="github icon" /></a>
+                                <a href="https://github.com/Mosjoandy/burgeroadfarm" target="_blank" rel="noopener noreferrer"><img id="linksIcon" src={require("../../components/images/git.png")} alt="github icon" /></a>
                             </Fade>
                         </h1>
                     </div>

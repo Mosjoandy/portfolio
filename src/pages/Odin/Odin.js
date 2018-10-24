@@ -66,7 +66,7 @@ class Odin extends React.Component {
                                     </Fade>
                                     <div className="card-body orBody">
                                         <Fade cascade top duration={1200}>
-                                            <div>
+                                            <div id="cardInfo">
                                                 <p>
                                                     Odin's Ravens is a digitized version of the card game from Osprey Games.
                                                     In 2016, it was the winner of Games Expo Best Strategic Card and Dice Game.
@@ -99,11 +99,11 @@ class Odin extends React.Component {
                                            
                                         </div>
                                     </Fade> */}
-                                    <div className="card-body">
+                                    <div className="card-body bottomsUp">
                                         <h1 className="text-center">
                                             <Fade top delay={1000}>
                                                 <a href="https://odins-ravens.herokuapp.com/" target="_blank" rel="noopener noreferrer"><button className="playButton">Play Live</button></a>
-                                                <a href="https://github.com/Mosjoandy/OdinsWorld" target="_blank" rel="noopener noreferrer"><img id="linksIcon" src={require("../../components/images/github.png")} alt="github icon" /></a>
+                                                <a href="https://github.com/Mosjoandy/OdinsWorld" target="_blank" rel="noopener noreferrer"><img id="linksIcon" src={require("../../components/images/git.png")} alt="github icon" /></a>
                                             </Fade>
                                         </h1>
                                     </div>
